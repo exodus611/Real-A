@@ -1,0 +1,1648 @@
+{
+ "generated_at": "2026-10-03T23:32:56+00:00",
+ "city": "קרית גת",
+ "prices": {
+  "city": "קרית גת",
+  "code_check": {
+   "код_ламас": 2630,
+   "города_под_этим_кодом": [
+    "קרית גת"
+   ],
+   "корректно": true
+  },
+  "records": 52,
+  "all_records": 2318,
+  "cities_covered": 110,
+  "timeline": [
+   {
+    "year": 2018,
+    "price_m2_median": 6838.0,
+    "price_m2_min": 6420.0,
+    "price_m2_max": 7000.0,
+    "lotteries": 10,
+    "units": 1267
+   },
+   {
+    "year": 2019,
+    "price_m2_median": 6828.0,
+    "price_m2_min": 6420.0,
+    "price_m2_max": 6846.0,
+    "lotteries": 6,
+    "units": 503
+   },
+   {
+    "year": 2020,
+    "price_m2_median": 6828.0,
+    "price_m2_min": 6420.0,
+    "price_m2_max": 7000.0,
+    "lotteries": 6,
+    "units": 469
+   },
+   {
+    "year": 2021,
+    "price_m2_median": 6846.0,
+    "price_m2_min": 6846.0,
+    "price_m2_max": 6846.0,
+    "lotteries": 1,
+    "units": 7
+   },
+   {
+    "year": 2022,
+    "price_m2_median": 6420.0,
+    "price_m2_min": 6420.0,
+    "price_m2_max": 6420.0,
+    "lotteries": 1,
+    "units": 2
+   },
+   {
+    "year": 2024,
+    "price_m2_median": 10880.0,
+    "price_m2_min": 10842.0,
+    "price_m2_max": 11802.0,
+    "lotteries": 28,
+    "units": 3725
+   }
+  ],
+  "price_index": {
+   "построен": false,
+   "база": 2018,
+   "ряд": [
+    {
+     "year": 2018,
+     "index": 100.0,
+     "районов_в_сравнении": null,
+     "связь": "база"
+    },
+    {
+     "year": 2019,
+     "index": 99.85,
+     "районов_в_сравнении": 1,
+     "связь": "прямая",
+     "изменение_к_пред_году_pct": -0.15
+    },
+    {
+     "year": 2020,
+     "index": 99.85,
+     "районов_в_сравнении": 1,
+     "связь": "прямая",
+     "изменение_к_пред_году_pct": 0.0
+    },
+    {
+     "year": 2021,
+     "index": 100.12,
+     "районов_в_сравнении": 1,
+     "связь": "прямая",
+     "изменение_к_пред_году_pct": 0.26
+    },
+    {
+     "year": 2022,
+     "index": 93.89,
+     "районов_в_сравнении": 1,
+     "связь": "прямая",
+     "изменение_к_пред_году_pct": -6.22
+    },
+    {
+     "year": 2024,
+     "index": null,
+     "районов_в_сравнении": 0,
+     "связь": "разрыв"
+    }
+   ],
+   "разрывы": [
+    {
+     "между_годами": [
+      2022,
+      2024
+     ],
+     "причина": "ни один район не встречается в обоих годах",
+     "районы_раньше": [
+      "היתכנות שורק"
+     ],
+     "районы_позже": [
+      "אתר 01",
+      "שכ' מערבית"
+     ]
+    }
+   ],
+   "покрытие": "5 из 6 годов связаны напрямую",
+   "частично": true,
+   "итог_pct": -6.1,
+   "cagr_pct": -1.56,
+   "период": [
+    2018,
+    2022
+   ]
+  },
+  "neighborhoods": [
+   {
+    "name": "היתכנות שורק",
+    "years": 5,
+    "first_year": 2018,
+    "last_year": 2022,
+    "first_price": 6838.0,
+    "last_price": 6420.0,
+    "cagr_pct": -1.6,
+    "series": [
+     {
+      "year": 2018,
+      "price_m2": 6838.0,
+      "lots": 10
+     },
+     {
+      "year": 2019,
+      "price_m2": 6828.0,
+      "lots": 6
+     },
+     {
+      "year": 2020,
+      "price_m2": 6828.0,
+      "lots": 6
+     },
+     {
+      "year": 2021,
+      "price_m2": 6846.0,
+      "lots": 1
+     },
+     {
+      "year": 2022,
+      "price_m2": 6420.0,
+      "lots": 1
+     }
+    ]
+   },
+   {
+    "name": "אתר 01",
+    "years": 1,
+    "first_year": 2024,
+    "last_year": 2024,
+    "first_price": 10880.0,
+    "last_price": 10880.0,
+    "cagr_pct": null,
+    "series": [
+     {
+      "year": 2024,
+      "price_m2": 10880.0,
+      "lots": 19
+     }
+    ]
+   },
+   {
+    "name": "שכ' מערבית",
+    "years": 1,
+    "first_year": 2024,
+    "last_year": 2024,
+    "first_price": 10842.0,
+    "last_price": 10842.0,
+    "cagr_pct": null,
+    "series": [
+     {
+      "year": 2024,
+      "price_m2": 10842.0,
+      "lots": 9
+     }
+    ]
+   }
+  ],
+  "ranking": [
+   {
+    "city": "יהוד",
+    "price_m2": 19574.0,
+    "as_of": "2025-01-27"
+   },
+   {
+    "city": "מודיעין",
+    "price_m2": 18916.0,
+    "as_of": "2024-02-25"
+   },
+   {
+    "city": "קדימה-צורן",
+    "price_m2": 18642.0,
+    "as_of": "2023-01-16"
+   },
+   {
+    "city": "בת ים",
+    "price_m2": 18053.0,
+    "as_of": "2024-07-17"
+   },
+   {
+    "city": "ראשון לציון",
+    "price_m2": 17423.0,
+    "as_of": "2024-11-11"
+   },
+   {
+    "city": "כפר סבא",
+    "price_m2": 17408.0,
+    "as_of": "2024-11-11"
+   },
+   {
+    "city": "אשדוד",
+    "price_m2": 16607.0,
+    "as_of": "2023-05-14"
+   },
+   {
+    "city": "ירושלים",
+    "price_m2": 16446.0,
+    "as_of": "2025-01-27"
+   },
+   {
+    "city": "תל אביב -יפו",
+    "price_m2": 15500.0,
+    "as_of": "2024-07-17"
+   },
+   {
+    "city": "באר יעקב",
+    "price_m2": 15288.0,
+    "as_of": "2023-05-15"
+   },
+   {
+    "city": "יבנה",
+    "price_m2": 15089.0,
+    "as_of": "2023-05-15"
+   },
+   {
+    "city": "אלעד",
+    "price_m2": 14989.0,
+    "as_of": "2024-07-17"
+   },
+   {
+    "city": "הרצליה",
+    "price_m2": 14889.0,
+    "as_of": "2019-12-15"
+   },
+   {
+    "city": "ראש העין",
+    "price_m2": 14832.0,
+    "as_of": "2023-05-14"
+   },
+   {
+    "city": "רחובות",
+    "price_m2": 14812.0,
+    "as_of": "2025-01-27"
+   },
+   {
+    "city": "פתח תקוה",
+    "price_m2": 14554.0,
+    "as_of": "2024-02-25"
+   },
+   {
+    "city": "רמת גן",
+    "price_m2": 14000.0,
+    "as_of": "2022-07-24"
+   },
+   {
+    "city": "צור הדסה",
+    "price_m2": 13706.0,
+    "as_of": "2024-11-11"
+   },
+   {
+    "city": "רמלה",
+    "price_m2": 13588.0,
+    "as_of": "2023-01-15"
+   },
+   {
+    "city": "קרית עקרון",
+    "price_m2": 13439.0,
+    "as_of": "2024-02-25"
+   },
+   {
+    "city": "לוד",
+    "price_m2": 12757.0,
+    "as_of": "2022-11-14"
+   },
+   {
+    "city": "חיפה",
+    "price_m2": 12680.0,
+    "as_of": "2025-01-27"
+   },
+   {
+    "city": "בני עי\"ש",
+    "price_m2": 12659.0,
+    "as_of": "2024-11-11"
+   },
+   {
+    "city": "בית שמש",
+    "price_m2": 12506.0,
+    "as_of": "2025-01-27"
+   },
+   {
+    "city": "שוהם",
+    "price_m2": 12380.0,
+    "as_of": "2021-05-30"
+   },
+   {
+    "city": "רעננה",
+    "price_m2": 12221.0,
+    "as_of": "2019-12-15"
+   },
+   {
+    "city": "אילת",
+    "price_m2": 12206.0,
+    "as_of": "2024-11-11"
+   },
+   {
+    "city": "בני ברק",
+    "price_m2": 12150.0,
+    "as_of": "2022-04-26"
+   },
+   {
+    "city": "קרית אונו",
+    "price_m2": 12059.0,
+    "as_of": "2024-09-04"
+   },
+   {
+    "city": "טירת כרמל",
+    "price_m2": 11897.0,
+    "as_of": "2024-11-11"
+   },
+   {
+    "city": "בית דגן",
+    "price_m2": 11809.0,
+    "as_of": "2024-02-25"
+   },
+   {
+    "city": "קרית גת",
+    "price_m2": 11802.0,
+    "as_of": "2024-11-11"
+   },
+   {
+    "city": "גני תקוה",
+    "price_m2": 11748.0,
+    "as_of": "2018-03-21"
+   },
+   {
+    "city": "נס ציונה",
+    "price_m2": 11550.0,
+    "as_of": "2022-09-28"
+   },
+   {
+    "city": "נוף הגליל",
+    "price_m2": 11230.0,
+    "as_of": "2025-01-27"
+   },
+   {
+    "city": "אפרתה",
+    "price_m2": 11200.0,
+    "as_of": "2024-11-11"
+   },
+   {
+    "city": "אשקלון",
+    "price_m2": 10934.0,
+    "as_of": "2025-01-27"
+   },
+   {
+    "city": "כפר קאסם",
+    "price_m2": 10871.0,
+    "as_of": "2023-05-15"
+   },
+   {
+    "city": "רכסים",
+    "price_m2": 10808.0,
+    "as_of": "2024-11-11"
+   },
+   {
+    "city": "כרמיאל",
+    "price_m2": 10728.0,
+    "as_of": "2023-05-14"
+   },
+   {
+    "city": "אלקנה",
+    "price_m2": 10600.0,
+    "as_of": "2023-01-16"
+   },
+   {
+    "city": "קרני שומרון",
+    "price_m2": 10568.0,
+    "as_of": "2023-01-16"
+   },
+   {
+    "city": "באר שבע",
+    "price_m2": 10236.0,
+    "as_of": "2025-01-27"
+   },
+   {
+    "city": "קרית מלאכי",
+    "price_m2": 9862.0,
+    "as_of": "2024-11-11"
+   },
+   {
+    "city": "אור עקיבא",
+    "price_m2": 9600.0,
+    "as_of": "2022-05-01"
+   },
+   {
+    "city": "מבשרת ציון",
+    "price_m2": 9355.0,
+    "as_of": "2022-09-28"
+   },
+   {
+    "city": "זכרון יעקב",
+    "price_m2": 9320.0,
+    "as_of": "2021-05-30"
+   },
+   {
+    "city": "אור יהודה",
+    "price_m2": 9300.0,
+    "as_of": "2022-04-28"
+   },
+   {
+    "city": "מגדל העמק",
+    "price_m2": 9242.0,
+    "as_of": "2025-01-27"
+   },
+   {
+    "city": "נתניה",
+    "price_m2": 9189.0,
+    "as_of": "2023-06-21"
+   },
+   {
+    "city": "נהריה",
+    "price_m2": 9154.0,
+    "as_of": "2023-01-15"
+   },
+   {
+    "city": "קרית יערים",
+    "price_m2": 9140.0,
+    "as_of": "2019-01-24"
+   },
+   {
+    "city": "עפולה",
+    "price_m2": 8996.0,
+    "as_of": "2022-11-14"
+   },
+   {
+    "city": "ערד",
+    "price_m2": 8760.0,
+    "as_of": "2023-05-15"
+   },
+   {
+    "city": "קרית טבעון",
+    "price_m2": 8655.0,
+    "as_of": "2022-05-01"
+   },
+   {
+    "city": "אם אל-פחם",
+    "price_m2": 8322.0,
+    "as_of": "2025-01-27"
+   },
+   {
+    "city": "קרית ביאליק",
+    "price_m2": 8300.0,
+    "as_of": "2024-07-17"
+   },
+   {
+    "city": "מעלה אדומים",
+    "price_m2": 8300.0,
+    "as_of": "2022-09-28"
+   },
+   {
+    "city": "סח'נין",
+    "price_m2": 8225.0,
+    "as_of": "2022-11-14"
+   },
+   {
+    "city": "גדרה",
+    "price_m2": 8224.0,
+    "as_of": "2021-05-30"
+   },
+   {
+    "city": "עתלית",
+    "price_m2": 8178.0,
+    "as_of": "2022-08-01"
+   },
+   {
+    "city": "נצרת",
+    "price_m2": 8177.0,
+    "as_of": "2025-01-27"
+   },
+   {
+    "city": "קרית שמונה",
+    "price_m2": 8106.0,
+    "as_of": "2024-02-25"
+   },
+   {
+    "city": "נתיבות",
+    "price_m2": 8093.0,
+    "as_of": "2023-05-15"
+   },
+   {
+    "city": "אלפי מנשה",
+    "price_m2": 8090.0,
+    "as_of": "2024-04-10"
+   },
+   {
+    "city": "גן יבנה",
+    "price_m2": 8088.0,
+    "as_of": "2022-08-01"
+   },
+   {
+    "city": "פרדס חנה-כרכו",
+    "price_m2": 7999.0,
+    "as_of": "2020-12-14"
+   },
+   {
+    "city": "עמנואל",
+    "price_m2": 7867.0,
+    "as_of": "2023-01-16"
+   },
+   {
+    "city": "אבן יהודה",
+    "price_m2": 7847.0,
+    "as_of": "2019-05-20"
+   },
+   {
+    "city": "שדרות",
+    "price_m2": 7757.0,
+    "as_of": "2025-01-27"
+   },
+   {
+    "city": "ביתר עלית",
+    "price_m2": 7700.0,
+    "as_of": "2024-04-10"
+   },
+   {
+    "city": "נשר",
+    "price_m2": 7689.0,
+    "as_of": "2020-10-26"
+   },
+   {
+    "city": "יקנעם עלית",
+    "price_m2": 7547.0,
+    "as_of": "2022-01-19"
+   },
+   {
+    "city": "חדרה",
+    "price_m2": 7469.0,
+    "as_of": "2020-12-14"
+   },
+   {
+    "city": "גבע בנימין",
+    "price_m2": 7440.0,
+    "as_of": "2022-11-14"
+   },
+   {
+    "city": "אופקים",
+    "price_m2": 7438.0,
+    "as_of": "2025-01-27"
+   },
+   {
+    "city": "כפר יונה",
+    "price_m2": 7400.0,
+    "as_of": "2019-05-05"
+   },
+   {
+    "city": "אריאל",
+    "price_m2": 7377.0,
+    "as_of": "2022-09-28"
+   },
+   {
+    "city": "קצרין",
+    "price_m2": 7366.0,
+    "as_of": "2023-05-15"
+   },
+   {
+    "city": "קרית ים",
+    "price_m2": 7155.0,
+    "as_of": "2024-04-10"
+   },
+   {
+    "city": "בנימינה–גבעת עד",
+    "price_m2": 6940.0,
+    "as_of": "2018-10-23"
+   },
+   {
+    "city": "מרכז שפירא",
+    "price_m2": 6580.0,
+    "as_of": "2019-01-24"
+   },
+   {
+    "city": "פרדסיה",
+    "price_m2": 6557.0,
+    "as_of": "2017-07-27"
+   },
+   {
+    "city": "דימונה",
+    "price_m2": 6541.0,
+    "as_of": "2025-01-27"
+   },
+   {
+    "city": "בית אריה",
+    "price_m2": 6477.0,
+    "as_of": "2022-03-07"
+   },
+   {
+    "city": "פוריה-כפר עבו",
+    "price_m2": 6385.0,
+    "as_of": "2022-07-25"
+   },
+   {
+    "city": "עכו",
+    "price_m2": 6377.0,
+    "as_of": "2023-06-21"
+   },
+   {
+    "city": "צפת",
+    "price_m2": 6347.0,
+    "as_of": "2025-01-27"
+   },
+   {
+    "city": "חריש",
+    "price_m2": 6260.0,
+    "as_of": "2024-04-10"
+   },
+   {
+    "city": "בית שאן",
+    "price_m2": 6244.0,
+    "as_of": "2024-11-11"
+   },
+   {
+    "city": "קרית מוצקין",
+    "price_m2": 6074.0,
+    "as_of": "2021-01-18"
+   },
+   {
+    "city": "ג'סר א-זרקא",
+    "price_m2": 6000.0,
+    "as_of": "2022-08-01"
+   },
+   {
+    "city": "טבריה",
+    "price_m2": 5975.0,
+    "as_of": "2024-04-10"
+   },
+   {
+    "city": "דיר אל-אסד",
+    "price_m2": 5900.0,
+    "as_of": "2024-07-17"
+   },
+   {
+    "city": "מדרשת בן גוריון",
+    "price_m2": 5845.0,
+    "as_of": "2020-02-10"
+   },
+   {
+    "city": "כפר ברא",
+    "price_m2": 5818.0,
+    "as_of": "2022-07-25"
+   },
+   {
+    "city": "עראבה",
+    "price_m2": 5777.0,
+    "as_of": "2022-07-25"
+   },
+   {
+    "city": "בת חפר",
+    "price_m2": 5755.0,
+    "as_of": "2022-05-01"
+   },
+   {
+    "city": "בית אל",
+    "price_m2": 5555.0,
+    "as_of": "2021-11-08"
+   },
+   {
+    "city": "אכסאל",
+    "price_m2": 5498.0,
+    "as_of": "2024-07-17"
+   },
+   {
+    "city": "ירוחם",
+    "price_m2": 5455.0,
+    "as_of": "2019-09-22"
+   },
+   {
+    "city": "מעלות-תרשיחא",
+    "price_m2": 5390.0,
+    "as_of": "2024-04-10"
+   },
+   {
+    "city": "מצפה רמון",
+    "price_m2": 5377.0,
+    "as_of": "2022-08-01"
+   },
+   {
+    "city": "דיר חנא",
+    "price_m2": 5185.0,
+    "as_of": "2022-07-25"
+   },
+   {
+    "city": "שלומי",
+    "price_m2": 5175.0,
+    "as_of": "2019-05-05"
+   },
+   {
+    "city": "חצור הגלילית",
+    "price_m2": 5131.0,
+    "as_of": "2021-11-08"
+   },
+   {
+    "city": "כפר מנדא",
+    "price_m2": 4900.0,
+    "as_of": "2019-03-17"
+   },
+   {
+    "city": "מעלה אפרים",
+    "price_m2": 4800.0,
+    "as_of": "2022-07-25"
+   },
+   {
+    "city": "נחף",
+    "price_m2": 3800.0,
+    "as_of": "2019-03-17"
+   },
+   {
+    "city": "טרעאן",
+    "price_m2": 3777.0,
+    "as_of": "2022-07-25"
+   }
+  ],
+  "my_rank": 32,
+  "my_latest_price": 11802.0,
+  "peers": [
+   {
+    "city": "בית דגן",
+    "price_m2": 11809.0,
+    "as_of": "2024-02-25"
+   },
+   {
+    "city": "גני תקוה",
+    "price_m2": 11748.0,
+    "as_of": "2018-03-21"
+   },
+   {
+    "city": "טירת כרמל",
+    "price_m2": 11897.0,
+    "as_of": "2024-11-11"
+   },
+   {
+    "city": "נס ציונה",
+    "price_m2": 11550.0,
+    "as_of": "2022-09-28"
+   },
+   {
+    "city": "קרית אונו",
+    "price_m2": 12059.0,
+    "as_of": "2024-09-04"
+   },
+   {
+    "city": "בני ברק",
+    "price_m2": 12150.0,
+    "as_of": "2022-04-26"
+   },
+   {
+    "city": "אילת",
+    "price_m2": 12206.0,
+    "as_of": "2024-11-11"
+   },
+   {
+    "city": "רעננה",
+    "price_m2": 12221.0,
+    "as_of": "2019-12-15"
+   }
+  ],
+  "total_units_lotteries": 5973,
+  "total_winners": 4985,
+  "total_subscribers": 836393,
+  "projects": [
+   {
+    "project": "4",
+    "neighborhood": "אתר 01",
+    "price_m2": 11802.0,
+    "date": "2024-11-11",
+    "units": 132,
+    "winners": 132,
+    "subscribers": 16723,
+    "status": "בתהליכי הגרלה",
+    "provider": "י.ח. דמרי בניה ופיתוח בע\"מ"
+   },
+   {
+    "project": "20",
+    "neighborhood": "אתר 01",
+    "price_m2": 11802.0,
+    "date": "2024-07-17",
+    "units": 101,
+    "winners": 101,
+    "subscribers": 25065,
+    "status": "בתהליכי הגרלה",
+    "provider": "אביסרור משה ובניו עבודות בנין ופתוח"
+   },
+   {
+    "project": "9",
+    "neighborhood": "אתר 01",
+    "price_m2": 11802.0,
+    "date": "2024-07-17",
+    "units": 200,
+    "winners": 200,
+    "subscribers": 25287,
+    "status": "בתהליכי הגרלה",
+    "provider": "צרפתי שמעון בע\"מ"
+   },
+   {
+    "project": "5",
+    "neighborhood": "שכ' מערבית",
+    "price_m2": 11356.0,
+    "date": "2024-07-17",
+    "units": 79,
+    "winners": 79,
+    "subscribers": 22924,
+    "status": "בתהליכי הגרלה",
+    "provider": "נתנאל גרופ בע\"מ"
+   },
+   {
+    "project": "2",
+    "neighborhood": "שכ' מערבית",
+    "price_m2": 11356.0,
+    "date": "2024-07-17",
+    "units": 113,
+    "winners": 113,
+    "subscribers": 22983,
+    "status": "בתהליכי הגרלה",
+    "provider": "נתנאל גרופ בע\"מ"
+   },
+   {
+    "project": "3",
+    "neighborhood": "שכ' מערבית",
+    "price_m2": 11356.0,
+    "date": "2024-07-17",
+    "units": 171,
+    "winners": 171,
+    "subscribers": 23099,
+    "status": "בתהליכי הגרלה",
+    "provider": "ש.אלרוי בניה ופיתוח בע\"מ"
+   },
+   {
+    "project": "01",
+    "neighborhood": "שכ' מערבית",
+    "price_m2": 11356.0,
+    "date": "2024-07-17",
+    "units": 263,
+    "winners": 263,
+    "subscribers": 23286,
+    "status": "בתהליכי הגרלה",
+    "provider": "ש.אלרוי בניה ופיתוח בע\"מ"
+   },
+   {
+    "project": "11",
+    "neighborhood": "אתר 01",
+    "price_m2": 10880.0,
+    "date": "2024-02-25",
+    "units": 38,
+    "winners": 38,
+    "subscribers": 29664,
+    "status": "בתהליכי הגרלה",
+    "provider": "בן.ארי. (י.מ.) הנדסת בניין בע\"מ , שמ אטיאס - יעוץ והשקעות בע\"מ"
+   },
+   {
+    "project": "01",
+    "neighborhood": "שכ' מערבית",
+    "price_m2": 10842.0,
+    "date": "2024-02-25",
+    "units": 53,
+    "winners": 53,
+    "subscribers": 29339,
+    "status": "בתהליכי הגרלה",
+    "provider": "וינדור בקריה בע\"מ"
+   },
+   {
+    "project": "15",
+    "neighborhood": "אתר 01",
+    "price_m2": 10880.0,
+    "date": "2024-02-25",
+    "units": 55,
+    "winners": 55,
+    "subscribers": 29771,
+    "status": "בתהליכי הגרלה",
+    "provider": "רמי צרפתי חברה לבניה בע\"מ"
+   },
+   {
+    "project": "10",
+    "neighborhood": "אתר 01",
+    "price_m2": 10880.0,
+    "date": "2024-02-25",
+    "units": 78,
+    "winners": 78,
+    "subscribers": 29737,
+    "status": "בתהליכי הגרלה",
+    "provider": "קרדן נדל\"ן יזום ופיתוח בע\"מ"
+   },
+   {
+    "project": "18",
+    "neighborhood": "אתר 01",
+    "price_m2": 10880.0,
+    "date": "2024-02-25",
+    "units": 81,
+    "winners": 81,
+    "subscribers": 29703,
+    "status": "בתהליכי הגרלה",
+    "provider": "א.ד.מ. בוני ישראל יזמות ובניה בע\"מ"
+   },
+   {
+    "project": "5",
+    "neighborhood": "אתר 01",
+    "price_m2": 10880.0,
+    "date": "2024-02-25",
+    "units": 81,
+    "winners": 81,
+    "subscribers": 29960,
+    "status": "בתהליכי הגרלה",
+    "provider": "אביסרור משה ובניו עבודות בנין ופתוח"
+   },
+   {
+    "project": "07",
+    "neighborhood": "אתר 01",
+    "price_m2": 10880.0,
+    "date": "2024-02-25",
+    "units": 85,
+    "winners": 85,
+    "subscribers": 29756,
+    "status": "בתהליכי הגרלה",
+    "provider": "מ.ב.צ. יזמות והשקעות בע\"מ"
+   },
+   {
+    "project": "14",
+    "neighborhood": "אתר 01",
+    "price_m2": 10880.0,
+    "date": "2024-02-25",
+    "units": 102,
+    "winners": 102,
+    "subscribers": 29674,
+    "status": "בתהליכי הגרלה",
+    "provider": "אחים אוזן חברה לבניה בע\"מ"
+   },
+   {
+    "project": "19",
+    "neighborhood": "אתר 01",
+    "price_m2": 10880.0,
+    "date": "2024-02-25",
+    "units": 104,
+    "winners": 104,
+    "subscribers": 30747,
+    "status": "בתהליכי הגרלה",
+    "provider": "פרץ לוזון, בנין ופתוח בע\"מ"
+   },
+   {
+    "project": "01",
+    "neighborhood": "אתר 01",
+    "price_m2": 10880.0,
+    "date": "2024-02-25",
+    "units": 109,
+    "winners": 109,
+    "subscribers": 30518,
+    "status": "בתהליכי הגרלה",
+    "provider": "מרדכי אביב. מפעלי בניה בעמ"
+   },
+   {
+    "project": "6",
+    "neighborhood": "שכ' מערבית",
+    "price_m2": 10842.0,
+    "date": "2024-02-25",
+    "units": 116,
+    "winners": 116,
+    "subscribers": 30320,
+    "status": "בתהליכי הגרלה",
+    "provider": "עמרם אברהם חברה לבנין בע\"מ"
+   },
+   {
+    "project": "17",
+    "neighborhood": "אתר 01",
+    "price_m2": 10880.0,
+    "date": "2024-02-25",
+    "units": 119,
+    "winners": 119,
+    "subscribers": 30463,
+    "status": "בתהליכי הגרלה",
+    "provider": "אפי קפיטל פרוייקטים בע\"מ"
+   },
+   {
+    "project": "12",
+    "neighborhood": "אתר 01",
+    "price_m2": 10880.0,
+    "date": "2024-02-25",
+    "units": 127,
+    "winners": 127,
+    "subscribers": 30398,
+    "status": "בתהליכי הגרלה",
+    "provider": "מ.ב.צ. יזמות והשקעות בע\"מ"
+   },
+   {
+    "project": "6",
+    "neighborhood": "אתר 01",
+    "price_m2": 10880.0,
+    "date": "2024-02-25",
+    "units": 146,
+    "winners": 146,
+    "subscribers": 30513,
+    "status": "בתהליכי הגרלה",
+    "provider": "קרדן נדל\"ן יזום ופיתוח בע\"מ"
+   },
+   {
+    "project": "9",
+    "neighborhood": "שכ' מערבית",
+    "price_m2": 10842.0,
+    "date": "2024-02-25",
+    "units": 156,
+    "winners": 156,
+    "subscribers": 30486,
+    "status": "בתהליכי הגרלה",
+    "provider": "רייסדור יזמות בע\"מ"
+   },
+   {
+    "project": "16",
+    "neighborhood": "אתר 01",
+    "price_m2": 10880.0,
+    "date": "2024-02-25",
+    "units": 166,
+    "winners": 166,
+    "subscribers": 30599,
+    "status": "בתהליכי הגרלה",
+    "provider": "רייסדור יזמות בע\"מ"
+   },
+   {
+    "project": "13",
+    "neighborhood": "אתר 01",
+    "price_m2": 10880.0,
+    "date": "2024-02-25",
+    "units": 175,
+    "winners": 175,
+    "subscribers": 30699,
+    "status": "בתהליכי הגרלה",
+    "provider": "אפי קפיטל פרוייקטים בע\"מ"
+   },
+   {
+    "project": "3",
+    "neighborhood": "אתר 01",
+    "price_m2": 10880.0,
+    "date": "2024-02-25",
+    "units": 190,
+    "winners": 192,
+    "subscribers": 30654,
+    "status": "בתהליכי הגרלה",
+    "provider": "טריסון יזום ובניה בע\"מ"
+   },
+   {
+    "project": "07",
+    "neighborhood": "שכ' מערבית",
+    "price_m2": 10842.0,
+    "date": "2024-02-25",
+    "units": 207,
+    "winners": 207,
+    "subscribers": 30758,
+    "status": "בתהליכי הגרלה",
+    "provider": "רייסדור יזמות בע\"מ"
+   },
+   {
+    "project": "11",
+    "neighborhood": "שכ' מערבית",
+    "price_m2": 10842.0,
+    "date": "2024-02-25",
+    "units": 213,
+    "winners": 213,
+    "subscribers": 31023,
+    "status": "בתהליכי הגרלה",
+    "provider": "רייסדור יזמות בע\"מ"
+   },
+   {
+    "project": "8",
+    "neighborhood": "אתר 01",
+    "price_m2": 10880.0,
+    "date": "2024-02-25",
+    "units": 265,
+    "winners": 265,
+    "subscribers": 30778,
+    "status": "בתהליכי הגרלה",
+    "provider": "טריסון יזום ובניה בע\"מ"
+   },
+   {
+    "project": "WIN קרית גת",
+    "neighborhood": "היתכנות שורק",
+    "price_m2": 6420.0,
+    "date": "2022-06-15",
+    "units": 2,
+    "winners": 2,
+    "subscribers": 15715,
+    "status": "בחירת דירות",
+    "provider": "בוני התיכון ביצוע (1999) בע\"מ"
+   },
+   {
+    "project": "היתכנות שורק",
+    "neighborhood": "היתכנות שורק",
+    "price_m2": 6846.0,
+    "date": "2021-05-30",
+    "units": 7,
+    "winners": 9,
+    "subscribers": 3556,
+    "status": "בתהליכי הגרלה",
+    "provider": "עמרם אברהם חברה לבנין בע\"מ"
+   },
+   {
+    "project": "היתכנות שורק",
+    "neighborhood": "היתכנות שורק",
+    "price_m2": 6846.0,
+    "date": "2020-08-19",
+    "units": 154,
+    "winners": 168,
+    "subscribers": 1788,
+    "status": "בתהליכי הגרלה",
+    "provider": "עמרם אברהם חברה לבנין בע\"מ"
+   },
+   {
+    "project": "היתכנות שורק",
+    "neighborhood": "היתכנות שורק",
+    "price_m2": 7000.0,
+    "date": "2020-08-19",
+    "units": 8,
+    "winners": 28,
+    "subscribers": 1354,
+    "status": "בתהליכי הגרלה",
+    "provider": "מגדלי איתי חברה לבנייה והשקעות"
+   },
+   {
+    "project": "היתכנות שורק",
+    "neighborhood": "היתכנות שורק",
+    "price_m2": 6818.0,
+    "date": "2020-06-28",
+    "units": 56,
+    "winners": 66,
+    "subscribers": 1692,
+    "status": "בחירת דירות",
+    "provider": "דונה חברה להנדסה ובנין בע\"מ"
+   },
+   {
+    "project": "WIN קרית גת",
+    "neighborhood": "היתכנות שורק",
+    "price_m2": 6420.0,
+    "date": "2020-05-07",
+    "units": 49,
+    "winners": 57,
+    "subscribers": 1325,
+    "status": "בחירת דירות",
+    "provider": "בוני התיכון ביצוע (1999) בע\"מ"
+   },
+   {
+    "project": "היתכנות שורק",
+    "neighborhood": "היתכנות שורק",
+    "price_m2": 6838.0,
+    "date": "2020-02-23",
+    "units": 51,
+    "winners": 67,
+    "subscribers": 949,
+    "status": "בחירת דירות",
+    "provider": "רייסדור בנייה בע\"מ"
+   },
+   {
+    "project": "היתכנות שורק",
+    "neighborhood": "היתכנות שורק",
+    "price_m2": 6818.0,
+    "date": "2020-01-19",
+    "units": 151,
+    "winners": 124,
+    "subscribers": 1508,
+    "status": "בחירת דירות",
+    "provider": "דונה חברה להנדסה ובנין בע\"מ"
+   },
+   {
+    "project": "היתכנות שורק",
+    "neighborhood": "היתכנות שורק",
+    "price_m2": 6838.0,
+    "date": "2019-12-15",
+    "units": 138,
+    "winners": 75,
+    "subscribers": 1066,
+    "status": "בחירת דירות",
+    "provider": "רייסדור בנייה בע\"מ"
+   },
+   {
+    "project": "WIN קרית גת",
+    "neighborhood": "היתכנות שורק",
+    "price_m2": 6420.0,
+    "date": "2019-12-15",
+    "units": 150,
+    "winners": 94,
+    "subscribers": 1186,
+    "status": "בחירת דירות",
+    "provider": "בוני התיכון ביצוע (1999) בע\"מ"
+   },
+   {
+    "project": "היתכנות שורק",
+    "neighborhood": "היתכנות שורק",
+    "price_m2": 6846.0,
+    "date": "2019-09-22",
+    "units": 72,
+    "winners": 29,
+    "subscribers": 529,
+    "status": "בתהליכי הגרלה",
+    "provider": "עמרם אברהם חברה לבנין בע\"מ"
+   },
+   {
+    "project": "היתכנות שורק",
+    "neighborhood": "היתכנות שורק",
+    "price_m2": 6818.0,
+    "date": "2019-08-04",
+    "units": 121,
+    "winners": 86,
+    "subscribers": 829,
+    "status": "בחירת דירות",
+    "provider": "דונה חברה להנדסה ובנין בע\"מ"
+   },
+   {
+    "project": "היתכנות שורק",
+    "neighborhood": "היתכנות שורק",
+    "price_m2": 6838.0,
+    "date": "2019-06-26",
+    "units": 15,
+    "winners": 26,
+    "subscribers": 617,
+    "status": "בחירת דירות",
+    "provider": "רייסדור בנייה בע\"מ"
+   },
+   {
+    "project": "WIN קרית גת",
+    "neighborhood": "היתכנות שורק",
+    "price_m2": 6420.0,
+    "date": "2019-05-05",
+    "units": 7,
+    "winners": 21,
+    "subscribers": 302,
+    "status": "בחירת דירות",
+    "provider": "בוני התיכון ביצוע (1999) בע\"מ"
+   },
+   {
+    "project": "היתכנות שורק",
+    "neighborhood": "היתכנות שורק",
+    "price_m2": 6846.0,
+    "date": "2018-07-08",
+    "units": 21,
+    "winners": 10,
+    "subscribers": 526,
+    "status": "בתהליכי הגרלה",
+    "provider": "עמרם אברהם חברה לבנין בע\"מ"
+   },
+   {
+    "project": "היתכנות שורק",
+    "neighborhood": "היתכנות שורק",
+    "price_m2": 6818.0,
+    "date": "2018-07-08",
+    "units": 19,
+    "winners": 13,
+    "subscribers": 535,
+    "status": "בחירת דירות",
+    "provider": "דונה חברה להנדסה ובנין בע\"מ"
+   },
+   {
+    "project": "היתכנות שורק",
+    "neighborhood": "היתכנות שורק",
+    "price_m2": 7000.0,
+    "date": "2018-05-02",
+    "units": 23,
+    "winners": 12,
+    "subscribers": 900,
+    "status": "בתהליכי הגרלה",
+    "provider": "מגדלי איתי חברה לבנייה והשקעות"
+   },
+   {
+    "project": "היתכנות שורק",
+    "neighborhood": "היתכנות שורק",
+    "price_m2": 6838.0,
+    "date": "2018-05-02",
+    "units": 89,
+    "winners": 44,
+    "subscribers": 962,
+    "status": "בחירת דירות",
+    "provider": "רייסדור בנייה בע\"מ"
+   },
+   {
+    "project": "WIN קרית גת",
+    "neighborhood": "היתכנות שורק",
+    "price_m2": 6420.0,
+    "date": "2018-05-02",
+    "units": 35,
+    "winners": 42,
+    "subscribers": 996,
+    "status": "בחירת דירות",
+    "provider": "בוני התיכון ביצוע (1999) בע\"מ"
+   },
+   {
+    "project": "היתכנות שורק",
+    "neighborhood": "היתכנות שורק",
+    "price_m2": 7000.0,
+    "date": "2018-03-18",
+    "units": 30,
+    "winners": 0,
+    "subscribers": 965,
+    "status": "בתהליכי הגרלה",
+    "provider": "מגדלי איתי חברה לבנייה והשקעות"
+   },
+   {
+    "project": "היתכנות שורק",
+    "neighborhood": "היתכנות שורק",
+    "price_m2": 6818.0,
+    "date": "2018-03-18",
+    "units": 372,
+    "winners": 139,
+    "subscribers": 1076,
+    "status": "בחירת דירות",
+    "provider": "דונה חברה להנדסה ובנין בע\"מ"
+   },
+   {
+    "project": "היתכנות שורק",
+    "neighborhood": "היתכנות שורק",
+    "price_m2": 6846.0,
+    "date": "2018-03-18",
+    "units": 282,
+    "winners": 66,
+    "subscribers": 990,
+    "status": "בתהליכי הגרלה",
+    "provider": "עמרם אברהם חברה לבנין בע\"מ"
+   },
+   {
+    "project": "היתכנות שורק",
+    "neighborhood": "היתכנות שורק",
+    "price_m2": 6838.0,
+    "date": "2018-03-18",
+    "units": 167,
+    "winners": 28,
+    "subscribers": 1023,
+    "status": "בחירת דירות",
+    "provider": "רייסדור בנייה בע\"מ"
+   },
+   {
+    "project": "WIN קרית גת",
+    "neighborhood": "היתכנות שורק",
+    "price_m2": 6420.0,
+    "date": "2018-03-18",
+    "units": 229,
+    "winners": 52,
+    "subscribers": 1077,
+    "status": "בחירת דירות",
+    "provider": "בוני התיכון ביצוע (1999) בע\"מ"
+   }
+  ]
+ },
+ "supply": {
+  "planning": {
+   "plans": [
+    {
+     "plan_number": "תמל/1011",
+     "name": "קרית גת מערב",
+     "stage": "תוקף",
+     "developer": "רמ\"י",
+     "units": 9366,
+     "threshold_date": "18/11/2015",
+     "approved_date": "08/11/2016",
+     "rmi_link": "http://apps.land.gov.il/IturTabot2/taba2.aspx?tochnitId=1015069",
+     "mavat_link": "http://mavat.moin.gov.il/MavatPS/Forms/SV4.aspx?tid=4&mp_id=CliOXy1vENpsvkCnyu5B1zp26LfifJRDmYPY2h2ckAT%2Ft9hHw%2FFzA2RjdbaLRnah%2B2UPFEFTETp%2BR2XwdjRDnSwHDaCmcMxirGuLULPdCRI%3D"
+    },
+    {
+     "plan_number": "606-0458471",
+     "name": "קרית גת - שער העיר",
+     "stage": "תנאי סף",
+     "developer": "רמ\"י",
+     "units": 558,
+     "threshold_date": "27/09/2017",
+     "approved_date": "-",
+     "rmi_link": "",
+     "mavat_link": "http://mavat.moin.gov.il/MavatPS/Forms/SV4.aspx?tid=4&mp_id=CliOXy1vENpXv68zTz5sj%2FJuhrIMPXGfJUHiyH1VGr6i6ZpL8CRM204ZyGbncK3R%2BaXxPsXVumKxWfYtIHoDN%2BeF8R9nU%2BbCCbkhXThsTMs%3D"
+    },
+    {
+     "plan_number": "3/140/03/9",
+     "name": "חוות הזרע - מתחמים 03 04",
+     "stage": "תוקף",
+     "developer": "רמ\"י",
+     "units": 249,
+     "threshold_date": "12/12/2011",
+     "approved_date": "20/03/2013",
+     "rmi_link": "http://apps.land.gov.il/IturTabot2/taba2.aspx?tochnitId=1012166",
+     "mavat_link": ""
+    },
+    {
+     "plan_number": "41/101/02/9",
+     "name": "רובע החורש",
+     "stage": "תוקף",
+     "developer": "רמ\"י",
+     "units": 112,
+     "threshold_date": "-",
+     "approved_date": "03/09/2009",
+     "rmi_link": "http://apps.land.gov.il/IturTabot2/taba2.aspx?tochnitId=1010671",
+     "mavat_link": ""
+    },
+    {
+     "plan_number": "606-0218115",
+     "name": "רצועת מגורים ממזרח לכביש 40",
+     "stage": "תוקף",
+     "developer": "רמ\"י",
+     "units": 90,
+     "threshold_date": "23/02/2016",
+     "approved_date": "24/09/2017",
+     "rmi_link": "http://apps.land.gov.il/IturTabot2/taba2.aspx?tochnitId=1015341",
+     "mavat_link": "http://mavat.moin.gov.il/MavatPS/Forms/SV4.aspx?tid=4&mp_id=CliOXy1vENqV828vo%2BJ7vVeGgD3fNHpi%2Bi6%2FWdMxdAEROXf9ZhiZ%2Bf9rfp%2FpvDpEgCG4TejzaRmOOq6UykJGEVC3RazjMBKneYfKP53QYB0%3D"
+    },
+    {
+     "plan_number": "9/במ/124",
+     "name": "גליקסון",
+     "stage": "תוקף",
+     "developer": "לא נרשם",
+     "units": 40,
+     "threshold_date": "-",
+     "approved_date": "29/07/1993",
+     "rmi_link": "http://apps.land.gov.il/IturTabot2/taba2.aspx?tochnitId=1000857",
+     "mavat_link": ""
+    },
+    {
+     "plan_number": "39/101/02/9",
+     "name": "רובע הפרחים",
+     "stage": "תוקף",
+     "developer": "משרד הבינוי והשיכון",
+     "units": 26,
+     "threshold_date": "-",
+     "approved_date": "24/05/2009",
+     "rmi_link": "http://apps.land.gov.il/IturTabot2/taba2.aspx?tochnitId=1010554",
+     "mavat_link": ""
+    },
+    {
+     "plan_number": "606-0269266",
+     "name": "קרית גת - צפון מתחמים 03-04 שינוי מספר 3",
+     "stage": "תוקף",
+     "developer": "רמ\"י",
+     "units": 22,
+     "threshold_date": "-",
+     "approved_date": "08/07/2015",
+     "rmi_link": "http://apps.land.gov.il/IturTabot2/taba2.aspx?tochnitId=1014423",
+     "mavat_link": "http://mavat.moin.gov.il/MavatPS/Forms/SV4.aspx?tid=4&mp_id=CliOXy1vENqvpiG%2BW0zOmIohlid%2FjwvA6iocfsXzw0X9RQ6W8EbjwSAfIDKn1gE3wKT%2Bmj3g23N6PyDRaJjKhewFCVb85XdjpL9NrTeK7Ck%3D"
+    },
+    {
+     "plan_number": "1/140/02/9",
+     "name": "חוות הזרע מתחם 01",
+     "stage": "תוקף",
+     "developer": "רמ\"י",
+     "units": 3,
+     "threshold_date": "24/09/2012",
+     "approved_date": "16/09/2013",
+     "rmi_link": "http://apps.land.gov.il/IturTabot2/taba2.aspx?tochnitId=1050603",
+     "mavat_link": ""
+    }
+   ],
+   "total_units": 10466,
+   "by_stage": {
+    "תוקף": 9908,
+    "תנאי סף": 558
+   }
+  },
+  "renewal": {
+   "complexes": [
+    {
+     "complex": "שבטי ישראל",
+     "number": 4373,
+     "existing_units": 372,
+     "added_units": 1977,
+     "planned_units": 2728,
+     "declared": "09/12/2020",
+     "track": "מיסוי",
+     "status": "תכנית מאושרת במימוש",
+     "permits_total": "1135",
+     "in_progress": "כן                                                                                                                                                                                                                                                             ",
+     "plan_number": "תמל/2010",
+     "map_link": "https://www.govmap.gov.il/map.html?lay=ADD_PROJECTS_UR_MUCHRAZ&bs=moch_projects|MISPARPROJECT~4373                                                                                                                                                             ",
+     "year_effective": "2019                                                                                                                                                                                                                                                           "
+    },
+    {
+     "complex": "מתחם המגדים",
+     "number": 8001118,
+     "existing_units": 675,
+     "added_units": 2025,
+     "planned_units": 2700,
+     "declared": "15/12/2024",
+     "track": "רשויות",
+     "status": "תכנון ראשוני",
+     "permits_total": "",
+     "in_progress": "לא                                                                                                                                                                                                                                                             ",
+     "plan_number": "",
+     "map_link": "https://www.govmap.gov.il/map.html?lay=ADD_PROJECTS_UR_MUCHRAZ&bs=moch_projects|MISPARPROJECT~8001118                                                                                                                                                          ",
+     "year_effective": ""
+    },
+    {
+     "complex": "מתחם פז",
+     "number": 8001116,
+     "existing_units": 154,
+     "added_units": 1027,
+     "planned_units": 1181,
+     "declared": "",
+     "track": "טרם הוכרז",
+     "status": "תכנון סטטוטורי",
+     "permits_total": "",
+     "in_progress": "לא                                                                                                                                                                                                                                                             ",
+     "plan_number": "606-0438796",
+     "map_link": "https://www.govmap.gov.il/map.html?lay=ADD_PROJECTS_UR_MUCHRAZ&bs=moch_projects|MISPARPROJECT~8001116                                                                                                                                                          ",
+     "year_effective": ""
+    },
+    {
+     "complex": "פנינת בנימין",
+     "number": 4431,
+     "existing_units": 144,
+     "added_units": 849,
+     "planned_units": 993,
+     "declared": "22/10/2025",
+     "track": "מיסוי",
+     "status": "תכנית מאושרת לפני מימוש",
+     "permits_total": "",
+     "in_progress": "לא                                                                                                                                                                                                                                                             ",
+     "plan_number": "תמל/2026",
+     "map_link": "https://www.govmap.gov.il/map.html?lay=ADD_PROJECTS_UR_MUCHRAZ&bs=moch_projects|MISPARPROJECT~4431                                                                                                                                                             ",
+     "year_effective": "2023                                                                                                                                                                                                                                                           "
+    },
+    {
+     "complex": "הנביאים מתחם 1",
+     "number": 8002016,
+     "existing_units": 230,
+     "added_units": 745,
+     "planned_units": 975,
+     "declared": "25/12/2024",
+     "track": "רשויות",
+     "status": "תכנון ראשוני",
+     "permits_total": "",
+     "in_progress": "לא                                                                                                                                                                                                                                                             ",
+     "plan_number": "606-1410539",
+     "map_link": "https://www.govmap.gov.il/map.html?lay=ADD_PROJECTS_UR_MUCHRAZ&bs=moch_projects|MISPARPROJECT~8002016                                                                                                                                                          ",
+     "year_effective": ""
+    },
+    {
+     "complex": "יסקי קוממיות",
+     "number": 100010,
+     "existing_units": 114,
+     "added_units": 1762,
+     "planned_units": 618,
+     "declared": "17/02/2019",
+     "track": "רשויות",
+     "status": "תכנית מאושרת לפני מימוש",
+     "permits_total": "",
+     "in_progress": "לא                                                                                                                                                                                                                                                             ",
+     "plan_number": "תמל/2014",
+     "map_link": "https://www.govmap.gov.il/map.html?lay=ADD_PROJECTS_UR_MUCHRAZ&bs=moch_projects|MISPARPROJECT~100010                                                                                                                                                           ",
+     "year_effective": "2022                                                                                                                                                                                                                                                           "
+    },
+    {
+     "complex": "היסמין",
+     "number": 4196,
+     "existing_units": 120,
+     "added_units": 348,
+     "planned_units": 466,
+     "declared": "09/06/2016",
+     "track": "מיסוי",
+     "status": "תכנית מאושרת - אחרי רישוי",
+     "permits_total": "466",
+     "in_progress": "לא                                                                                                                                                                                                                                                             ",
+     "plan_number": "606-0232397",
+     "map_link": "https://www.govmap.gov.il/map.html?lay=ADD_PROJECTS_UR_MUCHRAZ&bs=moch_projects|MISPARPROJECT~4196                                                                                                                                                             ",
+     "year_effective": "2015                                                                                                                                                                                                                                                           "
+    },
+    {
+     "complex": "שדרות גת",
+     "number": 4203,
+     "existing_units": 32,
+     "added_units": 262,
+     "planned_units": 294,
+     "declared": "",
+     "track": "",
+     "status": "תכנית מאושרת לפני מימוש",
+     "permits_total": "",
+     "in_progress": "לא                                                                                                                                                                                                                                                             ",
+     "plan_number": "606-0387407",
+     "map_link": "https://www.govmap.gov.il/map.html?lay=ADD_PROJECTS_UR_MUCHRAZ&bs=moch_projects|MISPARPROJECT~4203                                                                                                                                                             ",
+     "year_effective": "2023                                                                                                                                                                                                                                                           "
+    }
+   ],
+   "existing_units": 1841,
+   "added_units": 8995,
+   "planned_units": 9955,
+   "approved_and_active": 5
+  },
+  "construction": {
+   "sites": [
+    {
+     "site": "רובע הבנים",
+     "units": 579,
+     "projects": 33,
+     "last_contract": "23/12/2009"
+    },
+    {
+     "site": "גוגנהיים",
+     "units": 516,
+     "projects": 58,
+     "last_contract": "23/12/2009"
+    },
+    {
+     "site": "רובע הפרחים",
+     "units": 362,
+     "projects": 17,
+     "last_contract": "31/10/2012"
+    }
+   ],
+   "total_units": 1457
+  }
+ },
+ "caveats": [
+  "Цены — по льготной программе «Дира ба-анаха», они ниже свободного рынка.",
+  "Реестр всех сделок nadlan.gov.il закрыт reCAPTCHA Enterprise — свободные рыночные цены по конкретным квартирам недоступны.",
+  "Индекс цен на жильё ЦСБ из песочницы не отдаёт JSON, поэтому общерыночный тренд по Южному округу не приведён.",
+  "Общий ряд «по городу» составной: в разные годы разыгрывались разные районы, поэтому его рост частично отражает смену района, а не рост цен. Смотрите динамику внутри одного района.",
+  "Цепной индекс рвётся между 2022 и 2024: раньше разыгрывались היתכנות שורק, позже — אתר 01 / שכ' מערבית. Сравнивать эти годы напрямую нельзя."
+ ]
+}

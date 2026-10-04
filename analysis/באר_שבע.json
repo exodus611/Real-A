@@ -1,0 +1,2659 @@
+{
+ "generated_at": "2026-10-03T23:33:16+00:00",
+ "city": "באר שבע",
+ "prices": {
+  "city": "באר שבע",
+  "code_check": null,
+  "records": 107,
+  "all_records": 2318,
+  "cities_covered": 110,
+  "timeline": [
+   {
+    "year": 2017,
+    "price_m2_median": 7049.0,
+    "price_m2_min": 6328.0,
+    "price_m2_max": 7455.0,
+    "lotteries": 22,
+    "units": 2687
+   },
+   {
+    "year": 2018,
+    "price_m2_median": 6913.5,
+    "price_m2_min": 6328.0,
+    "price_m2_max": 7455.0,
+    "lotteries": 18,
+    "units": 941
+   },
+   {
+    "year": 2019,
+    "price_m2_median": 7048.0,
+    "price_m2_min": 6328.0,
+    "price_m2_max": 7455.0,
+    "lotteries": 31,
+    "units": 1614
+   },
+   {
+    "year": 2020,
+    "price_m2_median": 7029.5,
+    "price_m2_min": 6328.0,
+    "price_m2_max": 7389.0,
+    "lotteries": 8,
+    "units": 201
+   },
+   {
+    "year": 2021,
+    "price_m2_median": 7175.0,
+    "price_m2_min": 7050.0,
+    "price_m2_max": 7250.0,
+    "lotteries": 4,
+    "units": 148
+   },
+   {
+    "year": 2022,
+    "price_m2_median": 7818.0,
+    "price_m2_min": 7018.0,
+    "price_m2_max": 10276.0,
+    "lotteries": 17,
+    "units": 1344
+   },
+   {
+    "year": 2024,
+    "price_m2_median": 9552.0,
+    "price_m2_min": 9552.0,
+    "price_m2_max": 9552.0,
+    "lotteries": 1,
+    "units": 78
+   },
+   {
+    "year": 2025,
+    "price_m2_median": 10241.0,
+    "price_m2_min": 10236.0,
+    "price_m2_max": 10250.0,
+    "lotteries": 6,
+    "units": 205
+   }
+  ],
+  "price_index": {
+   "построен": false,
+   "база": 2017,
+   "ряд": [
+    {
+     "year": 2017,
+     "index": 100.0,
+     "районов_в_сравнении": null,
+     "связь": "база"
+    },
+    {
+     "year": 2018,
+     "index": 98.96,
+     "районов_в_сравнении": 4,
+     "связь": "прямая",
+     "изменение_к_пред_году_pct": -1.04
+    },
+    {
+     "year": 2019,
+     "index": 100.86,
+     "районов_в_сравнении": 4,
+     "связь": "прямая",
+     "изменение_к_пред_году_pct": 1.92
+    },
+    {
+     "year": 2020,
+     "index": 100.86,
+     "районов_в_сравнении": 3,
+     "связь": "прямая",
+     "изменение_к_пред_году_pct": 0.0
+    },
+    {
+     "year": 2021,
+     "index": 103.36,
+     "районов_в_сравнении": 1,
+     "связь": "прямая",
+     "изменение_к_пред_году_pct": 2.48
+    },
+    {
+     "year": 2022,
+     "index": 104.08,
+     "районов_в_сравнении": 2,
+     "связь": "прямая",
+     "изменение_к_пред_году_pct": 0.69
+    },
+    {
+     "year": 2024,
+     "index": 96.77,
+     "районов_в_сравнении": 1,
+     "связь": "прямая",
+     "изменение_к_пред_году_pct": -7.02
+    },
+    {
+     "year": 2025,
+     "index": null,
+     "районов_в_сравнении": 0,
+     "связь": "разрыв"
+    }
+   ],
+   "разрывы": [
+    {
+     "между_годами": [
+      2024,
+      2025
+     ],
+     "причина": "ни один район не встречается в обоих годах",
+     "районы_раньше": [
+      "פסגת רמות"
+     ],
+     "районы_позже": [
+      "רקפות"
+     ]
+    }
+   ],
+   "покрытие": "7 из 8 годов связаны напрямую",
+   "частично": true,
+   "итог_pct": -3.2,
+   "cagr_pct": -0.47,
+   "период": [
+    2017,
+    2024
+   ]
+  },
+  "neighborhoods": [
+   {
+    "name": "שכונת הפארק",
+    "years": 6,
+    "first_year": 2017,
+    "last_year": 2022,
+    "first_price": 7040.5,
+    "last_price": 7300.0,
+    "cagr_pct": 0.7,
+    "series": [
+     {
+      "year": 2017,
+      "price_m2": 7040.5,
+      "lots": 12
+     },
+     {
+      "year": 2018,
+      "price_m2": 6748.0,
+      "lots": 8
+     },
+     {
+      "year": 2019,
+      "price_m2": 7026.0,
+      "lots": 19
+     },
+     {
+      "year": 2020,
+      "price_m2": 7026.0,
+      "lots": 5
+     },
+     {
+      "year": 2021,
+      "price_m2": 7200.0,
+      "lots": 3
+     },
+     {
+      "year": 2022,
+      "price_m2": 7300.0,
+      "lots": 5
+     }
+    ]
+   },
+   {
+    "name": "סיגליות",
+    "years": 4,
+    "first_year": 2017,
+    "last_year": 2022,
+    "first_price": 7199.0,
+    "last_price": 7418.0,
+    "cagr_pct": 0.6,
+    "series": [
+     {
+      "year": 2017,
+      "price_m2": 7199.0,
+      "lots": 3
+     },
+     {
+      "year": 2018,
+      "price_m2": 7199.0,
+      "lots": 7
+     },
+     {
+      "year": 2019,
+      "price_m2": 7455.0,
+      "lots": 3
+     },
+     {
+      "year": 2022,
+      "price_m2": 7418.0,
+      "lots": 2
+     }
+    ]
+   },
+   {
+    "name": "אתר 01",
+    "years": 4,
+    "first_year": 2017,
+    "last_year": 2022,
+    "first_price": 7050.0,
+    "last_price": 7050.0,
+    "cagr_pct": 0.0,
+    "series": [
+     {
+      "year": 2017,
+      "price_m2": 7050.0,
+      "lots": 4
+     },
+     {
+      "year": 2019,
+      "price_m2": 7050.0,
+      "lots": 1
+     },
+     {
+      "year": 2021,
+      "price_m2": 7050.0,
+      "lots": 1
+     },
+     {
+      "year": 2022,
+      "price_m2": 7050.0,
+      "lots": 1
+     }
+    ]
+   },
+   {
+    "name": "01",
+    "years": 4,
+    "first_year": 2017,
+    "last_year": 2020,
+    "first_price": 7389.0,
+    "last_price": 7389.0,
+    "cagr_pct": 0.0,
+    "series": [
+     {
+      "year": 2017,
+      "price_m2": 7389.0,
+      "lots": 1
+     },
+     {
+      "year": 2018,
+      "price_m2": 7389.0,
+      "lots": 2
+     },
+     {
+      "year": 2019,
+      "price_m2": 7389.0,
+      "lots": 4
+     },
+     {
+      "year": 2020,
+      "price_m2": 7389.0,
+      "lots": 2
+     }
+    ]
+   },
+   {
+    "name": "נחל הפארק",
+    "years": 4,
+    "first_year": 2017,
+    "last_year": 2020,
+    "first_price": 6328.0,
+    "last_price": 6328.0,
+    "cagr_pct": 0.0,
+    "series": [
+     {
+      "year": 2017,
+      "price_m2": 6328.0,
+      "lots": 2
+     },
+     {
+      "year": 2018,
+      "price_m2": 6328.0,
+      "lots": 1
+     },
+     {
+      "year": 2019,
+      "price_m2": 6328.0,
+      "lots": 4
+     },
+     {
+      "year": 2020,
+      "price_m2": 6328.0,
+      "lots": 1
+     }
+    ]
+   },
+   {
+    "name": "פסגת רמות",
+    "years": 2,
+    "first_year": 2022,
+    "last_year": 2024,
+    "first_price": 10273.0,
+    "last_price": 9552.0,
+    "cagr_pct": -3.6,
+    "series": [
+     {
+      "year": 2022,
+      "price_m2": 10273.0,
+      "lots": 9
+     },
+     {
+      "year": 2024,
+      "price_m2": 9552.0,
+      "lots": 1
+     }
+    ]
+   },
+   {
+    "name": "רקפות",
+    "years": 1,
+    "first_year": 2025,
+    "last_year": 2025,
+    "first_price": 10241.0,
+    "last_price": 10241.0,
+    "cagr_pct": null,
+    "series": [
+     {
+      "year": 2025,
+      "price_m2": 10241.0,
+      "lots": 6
+     }
+    ]
+   }
+  ],
+  "ranking": [
+   {
+    "city": "יהוד",
+    "price_m2": 19574.0,
+    "as_of": "2025-01-27"
+   },
+   {
+    "city": "מודיעין",
+    "price_m2": 18916.0,
+    "as_of": "2024-02-25"
+   },
+   {
+    "city": "קדימה-צורן",
+    "price_m2": 18642.0,
+    "as_of": "2023-01-16"
+   },
+   {
+    "city": "בת ים",
+    "price_m2": 18053.0,
+    "as_of": "2024-07-17"
+   },
+   {
+    "city": "ראשון לציון",
+    "price_m2": 17423.0,
+    "as_of": "2024-11-11"
+   },
+   {
+    "city": "כפר סבא",
+    "price_m2": 17408.0,
+    "as_of": "2024-11-11"
+   },
+   {
+    "city": "אשדוד",
+    "price_m2": 16607.0,
+    "as_of": "2023-05-14"
+   },
+   {
+    "city": "ירושלים",
+    "price_m2": 16446.0,
+    "as_of": "2025-01-27"
+   },
+   {
+    "city": "תל אביב -יפו",
+    "price_m2": 15500.0,
+    "as_of": "2024-07-17"
+   },
+   {
+    "city": "באר יעקב",
+    "price_m2": 15288.0,
+    "as_of": "2023-05-15"
+   },
+   {
+    "city": "יבנה",
+    "price_m2": 15089.0,
+    "as_of": "2023-05-15"
+   },
+   {
+    "city": "אלעד",
+    "price_m2": 14989.0,
+    "as_of": "2024-07-17"
+   },
+   {
+    "city": "הרצליה",
+    "price_m2": 14889.0,
+    "as_of": "2019-12-15"
+   },
+   {
+    "city": "ראש העין",
+    "price_m2": 14832.0,
+    "as_of": "2023-05-14"
+   },
+   {
+    "city": "רחובות",
+    "price_m2": 14812.0,
+    "as_of": "2025-01-27"
+   },
+   {
+    "city": "פתח תקוה",
+    "price_m2": 14554.0,
+    "as_of": "2024-02-25"
+   },
+   {
+    "city": "רמת גן",
+    "price_m2": 14000.0,
+    "as_of": "2022-07-24"
+   },
+   {
+    "city": "צור הדסה",
+    "price_m2": 13706.0,
+    "as_of": "2024-11-11"
+   },
+   {
+    "city": "רמלה",
+    "price_m2": 13588.0,
+    "as_of": "2023-01-15"
+   },
+   {
+    "city": "קרית עקרון",
+    "price_m2": 13439.0,
+    "as_of": "2024-02-25"
+   },
+   {
+    "city": "לוד",
+    "price_m2": 12757.0,
+    "as_of": "2022-11-14"
+   },
+   {
+    "city": "חיפה",
+    "price_m2": 12680.0,
+    "as_of": "2025-01-27"
+   },
+   {
+    "city": "בני עי\"ש",
+    "price_m2": 12659.0,
+    "as_of": "2024-11-11"
+   },
+   {
+    "city": "בית שמש",
+    "price_m2": 12506.0,
+    "as_of": "2025-01-27"
+   },
+   {
+    "city": "שוהם",
+    "price_m2": 12380.0,
+    "as_of": "2021-05-30"
+   },
+   {
+    "city": "רעננה",
+    "price_m2": 12221.0,
+    "as_of": "2019-12-15"
+   },
+   {
+    "city": "אילת",
+    "price_m2": 12206.0,
+    "as_of": "2024-11-11"
+   },
+   {
+    "city": "בני ברק",
+    "price_m2": 12150.0,
+    "as_of": "2022-04-26"
+   },
+   {
+    "city": "קרית אונו",
+    "price_m2": 12059.0,
+    "as_of": "2024-09-04"
+   },
+   {
+    "city": "טירת כרמל",
+    "price_m2": 11897.0,
+    "as_of": "2024-11-11"
+   },
+   {
+    "city": "בית דגן",
+    "price_m2": 11809.0,
+    "as_of": "2024-02-25"
+   },
+   {
+    "city": "קרית גת",
+    "price_m2": 11802.0,
+    "as_of": "2024-11-11"
+   },
+   {
+    "city": "גני תקוה",
+    "price_m2": 11748.0,
+    "as_of": "2018-03-21"
+   },
+   {
+    "city": "נס ציונה",
+    "price_m2": 11550.0,
+    "as_of": "2022-09-28"
+   },
+   {
+    "city": "נוף הגליל",
+    "price_m2": 11230.0,
+    "as_of": "2025-01-27"
+   },
+   {
+    "city": "אפרתה",
+    "price_m2": 11200.0,
+    "as_of": "2024-11-11"
+   },
+   {
+    "city": "אשקלון",
+    "price_m2": 10934.0,
+    "as_of": "2025-01-27"
+   },
+   {
+    "city": "כפר קאסם",
+    "price_m2": 10871.0,
+    "as_of": "2023-05-15"
+   },
+   {
+    "city": "רכסים",
+    "price_m2": 10808.0,
+    "as_of": "2024-11-11"
+   },
+   {
+    "city": "כרמיאל",
+    "price_m2": 10728.0,
+    "as_of": "2023-05-14"
+   },
+   {
+    "city": "אלקנה",
+    "price_m2": 10600.0,
+    "as_of": "2023-01-16"
+   },
+   {
+    "city": "קרני שומרון",
+    "price_m2": 10568.0,
+    "as_of": "2023-01-16"
+   },
+   {
+    "city": "באר שבע",
+    "price_m2": 10236.0,
+    "as_of": "2025-01-27"
+   },
+   {
+    "city": "קרית מלאכי",
+    "price_m2": 9862.0,
+    "as_of": "2024-11-11"
+   },
+   {
+    "city": "אור עקיבא",
+    "price_m2": 9600.0,
+    "as_of": "2022-05-01"
+   },
+   {
+    "city": "מבשרת ציון",
+    "price_m2": 9355.0,
+    "as_of": "2022-09-28"
+   },
+   {
+    "city": "זכרון יעקב",
+    "price_m2": 9320.0,
+    "as_of": "2021-05-30"
+   },
+   {
+    "city": "אור יהודה",
+    "price_m2": 9300.0,
+    "as_of": "2022-04-28"
+   },
+   {
+    "city": "מגדל העמק",
+    "price_m2": 9242.0,
+    "as_of": "2025-01-27"
+   },
+   {
+    "city": "נתניה",
+    "price_m2": 9189.0,
+    "as_of": "2023-06-21"
+   },
+   {
+    "city": "נהריה",
+    "price_m2": 9154.0,
+    "as_of": "2023-01-15"
+   },
+   {
+    "city": "קרית יערים",
+    "price_m2": 9140.0,
+    "as_of": "2019-01-24"
+   },
+   {
+    "city": "עפולה",
+    "price_m2": 8996.0,
+    "as_of": "2022-11-14"
+   },
+   {
+    "city": "ערד",
+    "price_m2": 8760.0,
+    "as_of": "2023-05-15"
+   },
+   {
+    "city": "קרית טבעון",
+    "price_m2": 8655.0,
+    "as_of": "2022-05-01"
+   },
+   {
+    "city": "אם אל-פחם",
+    "price_m2": 8322.0,
+    "as_of": "2025-01-27"
+   },
+   {
+    "city": "קרית ביאליק",
+    "price_m2": 8300.0,
+    "as_of": "2024-07-17"
+   },
+   {
+    "city": "מעלה אדומים",
+    "price_m2": 8300.0,
+    "as_of": "2022-09-28"
+   },
+   {
+    "city": "סח'נין",
+    "price_m2": 8225.0,
+    "as_of": "2022-11-14"
+   },
+   {
+    "city": "גדרה",
+    "price_m2": 8224.0,
+    "as_of": "2021-05-30"
+   },
+   {
+    "city": "עתלית",
+    "price_m2": 8178.0,
+    "as_of": "2022-08-01"
+   },
+   {
+    "city": "נצרת",
+    "price_m2": 8177.0,
+    "as_of": "2025-01-27"
+   },
+   {
+    "city": "קרית שמונה",
+    "price_m2": 8106.0,
+    "as_of": "2024-02-25"
+   },
+   {
+    "city": "נתיבות",
+    "price_m2": 8093.0,
+    "as_of": "2023-05-15"
+   },
+   {
+    "city": "אלפי מנשה",
+    "price_m2": 8090.0,
+    "as_of": "2024-04-10"
+   },
+   {
+    "city": "גן יבנה",
+    "price_m2": 8088.0,
+    "as_of": "2022-08-01"
+   },
+   {
+    "city": "פרדס חנה-כרכו",
+    "price_m2": 7999.0,
+    "as_of": "2020-12-14"
+   },
+   {
+    "city": "עמנואל",
+    "price_m2": 7867.0,
+    "as_of": "2023-01-16"
+   },
+   {
+    "city": "אבן יהודה",
+    "price_m2": 7847.0,
+    "as_of": "2019-05-20"
+   },
+   {
+    "city": "שדרות",
+    "price_m2": 7757.0,
+    "as_of": "2025-01-27"
+   },
+   {
+    "city": "ביתר עלית",
+    "price_m2": 7700.0,
+    "as_of": "2024-04-10"
+   },
+   {
+    "city": "נשר",
+    "price_m2": 7689.0,
+    "as_of": "2020-10-26"
+   },
+   {
+    "city": "יקנעם עלית",
+    "price_m2": 7547.0,
+    "as_of": "2022-01-19"
+   },
+   {
+    "city": "חדרה",
+    "price_m2": 7469.0,
+    "as_of": "2020-12-14"
+   },
+   {
+    "city": "גבע בנימין",
+    "price_m2": 7440.0,
+    "as_of": "2022-11-14"
+   },
+   {
+    "city": "אופקים",
+    "price_m2": 7438.0,
+    "as_of": "2025-01-27"
+   },
+   {
+    "city": "כפר יונה",
+    "price_m2": 7400.0,
+    "as_of": "2019-05-05"
+   },
+   {
+    "city": "אריאל",
+    "price_m2": 7377.0,
+    "as_of": "2022-09-28"
+   },
+   {
+    "city": "קצרין",
+    "price_m2": 7366.0,
+    "as_of": "2023-05-15"
+   },
+   {
+    "city": "קרית ים",
+    "price_m2": 7155.0,
+    "as_of": "2024-04-10"
+   },
+   {
+    "city": "בנימינה–גבעת עד",
+    "price_m2": 6940.0,
+    "as_of": "2018-10-23"
+   },
+   {
+    "city": "מרכז שפירא",
+    "price_m2": 6580.0,
+    "as_of": "2019-01-24"
+   },
+   {
+    "city": "פרדסיה",
+    "price_m2": 6557.0,
+    "as_of": "2017-07-27"
+   },
+   {
+    "city": "דימונה",
+    "price_m2": 6541.0,
+    "as_of": "2025-01-27"
+   },
+   {
+    "city": "בית אריה",
+    "price_m2": 6477.0,
+    "as_of": "2022-03-07"
+   },
+   {
+    "city": "פוריה-כפר עבו",
+    "price_m2": 6385.0,
+    "as_of": "2022-07-25"
+   },
+   {
+    "city": "עכו",
+    "price_m2": 6377.0,
+    "as_of": "2023-06-21"
+   },
+   {
+    "city": "צפת",
+    "price_m2": 6347.0,
+    "as_of": "2025-01-27"
+   },
+   {
+    "city": "חריש",
+    "price_m2": 6260.0,
+    "as_of": "2024-04-10"
+   },
+   {
+    "city": "בית שאן",
+    "price_m2": 6244.0,
+    "as_of": "2024-11-11"
+   },
+   {
+    "city": "קרית מוצקין",
+    "price_m2": 6074.0,
+    "as_of": "2021-01-18"
+   },
+   {
+    "city": "ג'סר א-זרקא",
+    "price_m2": 6000.0,
+    "as_of": "2022-08-01"
+   },
+   {
+    "city": "טבריה",
+    "price_m2": 5975.0,
+    "as_of": "2024-04-10"
+   },
+   {
+    "city": "דיר אל-אסד",
+    "price_m2": 5900.0,
+    "as_of": "2024-07-17"
+   },
+   {
+    "city": "מדרשת בן גוריון",
+    "price_m2": 5845.0,
+    "as_of": "2020-02-10"
+   },
+   {
+    "city": "כפר ברא",
+    "price_m2": 5818.0,
+    "as_of": "2022-07-25"
+   },
+   {
+    "city": "עראבה",
+    "price_m2": 5777.0,
+    "as_of": "2022-07-25"
+   },
+   {
+    "city": "בת חפר",
+    "price_m2": 5755.0,
+    "as_of": "2022-05-01"
+   },
+   {
+    "city": "בית אל",
+    "price_m2": 5555.0,
+    "as_of": "2021-11-08"
+   },
+   {
+    "city": "אכסאל",
+    "price_m2": 5498.0,
+    "as_of": "2024-07-17"
+   },
+   {
+    "city": "ירוחם",
+    "price_m2": 5455.0,
+    "as_of": "2019-09-22"
+   },
+   {
+    "city": "מעלות-תרשיחא",
+    "price_m2": 5390.0,
+    "as_of": "2024-04-10"
+   },
+   {
+    "city": "מצפה רמון",
+    "price_m2": 5377.0,
+    "as_of": "2022-08-01"
+   },
+   {
+    "city": "דיר חנא",
+    "price_m2": 5185.0,
+    "as_of": "2022-07-25"
+   },
+   {
+    "city": "שלומי",
+    "price_m2": 5175.0,
+    "as_of": "2019-05-05"
+   },
+   {
+    "city": "חצור הגלילית",
+    "price_m2": 5131.0,
+    "as_of": "2021-11-08"
+   },
+   {
+    "city": "כפר מנדא",
+    "price_m2": 4900.0,
+    "as_of": "2019-03-17"
+   },
+   {
+    "city": "מעלה אפרים",
+    "price_m2": 4800.0,
+    "as_of": "2022-07-25"
+   },
+   {
+    "city": "נחף",
+    "price_m2": 3800.0,
+    "as_of": "2019-03-17"
+   },
+   {
+    "city": "טרעאן",
+    "price_m2": 3777.0,
+    "as_of": "2022-07-25"
+   }
+  ],
+  "my_rank": 43,
+  "my_latest_price": 10236.0,
+  "peers": [
+   {
+    "city": "קרני שומרון",
+    "price_m2": 10568.0,
+    "as_of": "2023-01-16"
+   },
+   {
+    "city": "אלקנה",
+    "price_m2": 10600.0,
+    "as_of": "2023-01-16"
+   },
+   {
+    "city": "קרית מלאכי",
+    "price_m2": 9862.0,
+    "as_of": "2024-11-11"
+   },
+   {
+    "city": "כרמיאל",
+    "price_m2": 10728.0,
+    "as_of": "2023-05-14"
+   },
+   {
+    "city": "רכסים",
+    "price_m2": 10808.0,
+    "as_of": "2024-11-11"
+   },
+   {
+    "city": "כפר קאסם",
+    "price_m2": 10871.0,
+    "as_of": "2023-05-15"
+   },
+   {
+    "city": "אור עקיבא",
+    "price_m2": 9600.0,
+    "as_of": "2022-05-01"
+   },
+   {
+    "city": "אשקלון",
+    "price_m2": 10934.0,
+    "as_of": "2025-01-27"
+   }
+  ],
+  "total_units_lotteries": 7218,
+  "total_winners": 3842,
+  "total_subscribers": 413684,
+  "projects": [
+   {
+    "project": "מגרש 7501",
+    "neighborhood": "רקפות",
+    "price_m2": 10236.0,
+    "date": "2025-01-27",
+    "units": 13,
+    "winners": 13,
+    "subscribers": 16482,
+    "status": "בתהליכי הגרלה",
+    "provider": "משה פרץ יזמות ונדל\"ן מ.פ 2024 בע\"מ"
+   },
+   {
+    "project": "מגרש 7504",
+    "neighborhood": "רקפות",
+    "price_m2": 10250.0,
+    "date": "2025-01-27",
+    "units": 19,
+    "winners": 19,
+    "subscribers": 16487,
+    "status": "בתהליכי הגרלה",
+    "provider": "אטיאס יעקוב ובניו חברה לבניה בע\"מ"
+   },
+   {
+    "project": "מגרש 7502",
+    "neighborhood": "רקפות",
+    "price_m2": 10245.0,
+    "date": "2025-01-27",
+    "units": 38,
+    "winners": 38,
+    "subscribers": 16708,
+    "status": "בתהליכי הגרלה",
+    "provider": "אייל פרץ יזמות ונדל\"ן 2011 בע\"מ"
+   },
+   {
+    "project": "מגרש 7503",
+    "neighborhood": "רקפות",
+    "price_m2": 10242.0,
+    "date": "2025-01-27",
+    "units": 39,
+    "winners": 39,
+    "subscribers": 16494,
+    "status": "בתהליכי הגרלה",
+    "provider": "רבץ מימושים והשקעות בע\"מ"
+   },
+   {
+    "project": "מגרשים 7507-7508",
+    "neighborhood": "רקפות",
+    "price_m2": 10240.0,
+    "date": "2025-01-27",
+    "units": 43,
+    "winners": 43,
+    "subscribers": 16639,
+    "status": "בתהליכי הגרלה",
+    "provider": "רבץ מימושים והשקעות בע\"מ"
+   },
+   {
+    "project": "מגרשים 7505-7506",
+    "neighborhood": "רקפות",
+    "price_m2": 10240.0,
+    "date": "2025-01-27",
+    "units": 53,
+    "winners": 53,
+    "subscribers": 17047,
+    "status": "בתהליכי הגרלה",
+    "provider": "רבץ מימושים והשקעות בע\"מ"
+   },
+   {
+    "project": "מגרשים 117A,119A",
+    "neighborhood": "פסגת רמות",
+    "price_m2": 9552.0,
+    "date": "2024-07-17",
+    "units": 78,
+    "winners": 78,
+    "subscribers": 7764,
+    "status": "בתהליכי הגרלה",
+    "provider": "ארז אלון יזמות ובניה בע\"מ"
+   },
+   {
+    "project": "שכ' אצבעות + מרכז",
+    "neighborhood": "פסגת רמות",
+    "price_m2": 10272.0,
+    "date": "2022-11-14",
+    "units": 58,
+    "winners": 58,
+    "subscribers": 21827,
+    "status": "בתהליכי הגרלה",
+    "provider": "ניו דלתא נדל\"ן ופרוייקטים בע\"מ"
+   },
+   {
+    "project": "שכ' אצבעות + מרכז",
+    "neighborhood": "פסגת רמות",
+    "price_m2": 10276.0,
+    "date": "2022-11-14",
+    "units": 79,
+    "winners": 79,
+    "subscribers": 21989,
+    "status": "בתהליכי הגרלה",
+    "provider": "י.אליה ובניו"
+   },
+   {
+    "project": "שכ' אצבעות + מרכז",
+    "neighborhood": "פסגת רמות",
+    "price_m2": 10275.0,
+    "date": "2022-11-14",
+    "units": 84,
+    "winners": 84,
+    "subscribers": 21903,
+    "status": "בתהליכי הגרלה",
+    "provider": "יואב את רמי בניה, ניהול ופיקוח בע\"מ"
+   },
+   {
+    "project": "שכ' אצבעות + מרכז",
+    "neighborhood": "פסגת רמות",
+    "price_m2": 10273.0,
+    "date": "2022-11-14",
+    "units": 104,
+    "winners": 104,
+    "subscribers": 22066,
+    "status": "בתהליכי הגרלה",
+    "provider": "שתית בע\"מ"
+   },
+   {
+    "project": "שכ' אצבעות + מרכז",
+    "neighborhood": "פסגת רמות",
+    "price_m2": 10272.0,
+    "date": "2022-11-14",
+    "units": 161,
+    "winners": 161,
+    "subscribers": 22586,
+    "status": "בתהליכי הגרלה",
+    "provider": "פרץ לוזון, בנין ופתוח בע\"מ"
+   },
+   {
+    "project": "שכ' אצבעות + מרכז",
+    "neighborhood": "פסגת רמות",
+    "price_m2": 10273.0,
+    "date": "2022-11-14",
+    "units": 174,
+    "winners": 174,
+    "subscribers": 22436,
+    "status": "בתהליכי הגרלה",
+    "provider": "אחים אום חברה לעבודות בנין השקעות ו"
+   },
+   {
+    "project": "שכ' אצבעות + מרכז",
+    "neighborhood": "פסגת רמות",
+    "price_m2": 10272.0,
+    "date": "2022-11-14",
+    "units": 190,
+    "winners": 190,
+    "subscribers": 22513,
+    "status": "בתהליכי הגרלה",
+    "provider": "א.ש. יגל יזמות ובניה בע\"מ"
+   },
+   {
+    "project": "אתר 01",
+    "neighborhood": "אתר 01",
+    "price_m2": 7050.0,
+    "date": "2022-08-01",
+    "units": 97,
+    "winners": 151,
+    "subscribers": 11613,
+    "status": "בתהליכי הגרלה",
+    "provider": "צרפתי שמעון בע\"מ"
+   },
+   {
+    "project": "שכ' אצבעות + מרכז",
+    "neighborhood": "פסגת רמות",
+    "price_m2": 10273.0,
+    "date": "2022-07-24",
+    "units": 65,
+    "winners": 65,
+    "subscribers": 4666,
+    "status": "בתהליכי הגרלה",
+    "provider": "ארז אלון יזמות ובניה בע\"מ"
+   },
+   {
+    "project": "אתר 01",
+    "neighborhood": "שכונת הפארק",
+    "price_m2": 7656.0,
+    "date": "2022-04-26",
+    "units": 21,
+    "winners": 21,
+    "subscribers": 4253,
+    "status": "בתהליכי הגרלה",
+    "provider": "א.ג. בוסקילה עבודות בנייה בע\"מ"
+   },
+   {
+    "project": "אתר 01",
+    "neighborhood": "שכונת הפארק",
+    "price_m2": 7656.0,
+    "date": "2022-04-26",
+    "units": 25,
+    "winners": 25,
+    "subscribers": 4259,
+    "status": "בתהליכי הגרלה",
+    "provider": "א.ג. בוסקילה עבודות בנייה בע\"מ"
+   },
+   {
+    "project": "אתר 01",
+    "neighborhood": "שכונת הפארק",
+    "price_m2": 7300.0,
+    "date": "2022-04-26",
+    "units": 30,
+    "winners": 30,
+    "subscribers": 6962,
+    "status": "בתהליכי הגרלה",
+    "provider": "שובל מתחמי מגורים בע\"מ"
+   },
+   {
+    "project": "01",
+    "neighborhood": "סיגליות",
+    "price_m2": 7018.0,
+    "date": "2022-04-26",
+    "units": 34,
+    "winners": 34,
+    "subscribers": 4897,
+    "status": "בתהליכי הגרלה",
+    "provider": "אל עוז 18 - השקעות ויזמות בע\"מ"
+   },
+   {
+    "project": "01",
+    "neighborhood": "סיגליות",
+    "price_m2": 7818.0,
+    "date": "2022-04-26",
+    "units": 35,
+    "winners": 35,
+    "subscribers": 4760,
+    "status": "בתהליכי הגרלה",
+    "provider": "י. אליה ובניו יזמות וקבלני בני"
+   },
+   {
+    "project": "שכ' אצבעות + מרכז",
+    "neighborhood": "פסגת רמות",
+    "price_m2": 7359.0,
+    "date": "2022-04-26",
+    "units": 102,
+    "winners": 102,
+    "subscribers": 5165,
+    "status": "בתהליכי הגרלה",
+    "provider": "א.ש. יגל יזמות ובניה בע\"מ"
+   },
+   {
+    "project": "אתר 01",
+    "neighborhood": "שכונת הפארק",
+    "price_m2": 7092.0,
+    "date": "2022-03-07",
+    "units": 26,
+    "winners": 26,
+    "subscribers": 10595,
+    "status": "בחירת דירות",
+    "provider": "פרץ בוני הנגב-אחים פרץ בע\"מ"
+   },
+   {
+    "project": "אתר 01",
+    "neighborhood": "שכונת הפארק",
+    "price_m2": 7026.0,
+    "date": "2022-03-07",
+    "units": 59,
+    "winners": 59,
+    "subscribers": 11435,
+    "status": "בתהליכי הגרלה",
+    "provider": "פרץ בוני הנגב-אחים פרץ בע\"מ"
+   },
+   {
+    "project": "אתר 01",
+    "neighborhood": "אתר 01",
+    "price_m2": 7050.0,
+    "date": "2021-05-30",
+    "units": 65,
+    "winners": 164,
+    "subscribers": 3830,
+    "status": "בתהליכי הגרלה",
+    "provider": "צרפתי שמעון בע\"מ"
+   },
+   {
+    "project": "אתר 01",
+    "neighborhood": "שכונת הפארק",
+    "price_m2": 7250.0,
+    "date": "2021-04-27",
+    "units": 22,
+    "winners": 22,
+    "subscribers": 4450,
+    "status": "בתהליכי הגרלה",
+    "provider": "שובל מתחמי מגורים בע\"מ"
+   },
+   {
+    "project": "אתר 01",
+    "neighborhood": "שכונת הפארק",
+    "price_m2": 7150.0,
+    "date": "2021-04-27",
+    "units": 39,
+    "winners": 39,
+    "subscribers": 4636,
+    "status": "בתהליכי הגרלה",
+    "provider": "שובל מתחמי מגורים בע\"מ"
+   },
+   {
+    "project": "אתר 01",
+    "neighborhood": "שכונת הפארק",
+    "price_m2": 7200.0,
+    "date": "2021-04-27",
+    "units": 22,
+    "winners": 22,
+    "subscribers": 4553,
+    "status": "בתהליכי הגרלה",
+    "provider": "שובל מתחמי מגורים בע\"מ"
+   },
+   {
+    "project": "01",
+    "neighborhood": "01",
+    "price_m2": 7389.0,
+    "date": "2020-06-28",
+    "units": 20,
+    "winners": 25,
+    "subscribers": 1111,
+    "status": "בחירת דירות",
+    "provider": "ארזים (ג.י.א) בע\"מ"
+   },
+   {
+    "project": "אתר 01",
+    "neighborhood": "שכונת הפארק",
+    "price_m2": 7092.0,
+    "date": "2020-06-28",
+    "units": 36,
+    "winners": 15,
+    "subscribers": 1180,
+    "status": "בחירת דירות",
+    "provider": "פרץ בוני הנגב-אחים פרץ בע\"מ"
+   },
+   {
+    "project": "אתר 01",
+    "neighborhood": "שכונת הפארק",
+    "price_m2": 7026.0,
+    "date": "2020-06-28",
+    "units": 22,
+    "winners": 49,
+    "subscribers": 1168,
+    "status": "בתהליכי הגרלה",
+    "provider": "פרץ בוני הנגב-אחים פרץ בע\"מ"
+   },
+   {
+    "project": "אתר 01",
+    "neighborhood": "שכונת הפארק",
+    "price_m2": 7033.0,
+    "date": "2020-02-23",
+    "units": 21,
+    "winners": 79,
+    "subscribers": 783,
+    "status": "בחירת דירות",
+    "provider": "אסום - חברה קבלנית לבנין בע\"מ"
+   },
+   {
+    "project": "01",
+    "neighborhood": "01",
+    "price_m2": 7389.0,
+    "date": "2020-01-19",
+    "units": 53,
+    "winners": 30,
+    "subscribers": 975,
+    "status": "בחירת דירות",
+    "provider": "ארזים (ג.י.א) בע\"מ"
+   },
+   {
+    "project": "באר שבע טאצ'",
+    "neighborhood": "שכונת הפארק",
+    "price_m2": 6685.0,
+    "date": "2020-01-19",
+    "units": 18,
+    "winners": 19,
+    "subscribers": 952,
+    "status": "בחירת דירות",
+    "provider": "סלעית טובולסקי פארק באר שבע בע\"מ"
+   },
+   {
+    "project": "באר שבע טאצ'",
+    "neighborhood": "שכונת הפארק",
+    "price_m2": 6748.0,
+    "date": "2020-01-19",
+    "units": 17,
+    "winners": 21,
+    "subscribers": 957,
+    "status": "בחירת דירות",
+    "provider": "שובל מתחמי מגורים בע\"מ"
+   },
+   {
+    "project": "באר שבע טאצ'",
+    "neighborhood": "נחל הפארק",
+    "price_m2": 6328.0,
+    "date": "2020-01-19",
+    "units": 14,
+    "winners": 16,
+    "subscribers": 1087,
+    "status": "בחירת דירות",
+    "provider": "סלעית טובולסקי פארק באר שבע בע\"מ"
+   },
+   {
+    "project": "אתר 01",
+    "neighborhood": "שכונת הפארק",
+    "price_m2": 7092.0,
+    "date": "2019-12-16",
+    "units": 57,
+    "winners": 20,
+    "subscribers": 908,
+    "status": "בחירת דירות",
+    "provider": "פרץ בוני הנגב-אחים פרץ בע\"מ"
+   },
+   {
+    "project": "אתר 01",
+    "neighborhood": "שכונת הפארק",
+    "price_m2": 7089.0,
+    "date": "2019-12-15",
+    "units": 92,
+    "winners": 88,
+    "subscribers": 888,
+    "status": "בחירת דירות",
+    "provider": "אחים אוזן חברה לבניה בע\"מ"
+   },
+   {
+    "project": "באר שבע טאצ'",
+    "neighborhood": "שכונת הפארק",
+    "price_m2": 6748.0,
+    "date": "2019-09-22",
+    "units": 26,
+    "winners": 11,
+    "subscribers": 361,
+    "status": "בחירת דירות",
+    "provider": "שובל מתחמי מגורים בע\"מ"
+   },
+   {
+    "project": "01",
+    "neighborhood": "01",
+    "price_m2": 7389.0,
+    "date": "2019-09-22",
+    "units": 80,
+    "winners": 30,
+    "subscribers": 376,
+    "status": "בחירת דירות",
+    "provider": "ארזים (ג.י.א) בע\"מ"
+   },
+   {
+    "project": "באר שבע טאצ'",
+    "neighborhood": "שכונת הפארק",
+    "price_m2": 6685.0,
+    "date": "2019-09-22",
+    "units": 29,
+    "winners": 13,
+    "subscribers": 366,
+    "status": "בחירת דירות",
+    "provider": "סלעית טובולסקי פארק באר שבע בע\"מ"
+   },
+   {
+    "project": "באר שבע טאצ'",
+    "neighborhood": "נחל הפארק",
+    "price_m2": 6328.0,
+    "date": "2019-09-22",
+    "units": 20,
+    "winners": 8,
+    "subscribers": 441,
+    "status": "בחירת דירות",
+    "provider": "סלעית טובולסקי פארק באר שבע בע\"מ"
+   },
+   {
+    "project": "אתר 01",
+    "neighborhood": "שכונת הפארק",
+    "price_m2": 7048.0,
+    "date": "2019-08-04",
+    "units": 15,
+    "winners": 43,
+    "subscribers": 412,
+    "status": "בחירת דירות",
+    "provider": "אבני דרך יהלום עפולה בע\"מ"
+   },
+   {
+    "project": "אתר 01",
+    "neighborhood": "אתר 01",
+    "price_m2": 7050.0,
+    "date": "2019-08-04",
+    "units": 55,
+    "winners": 11,
+    "subscribers": 424,
+    "status": "בתהליכי הגרלה",
+    "provider": "צרפתי שמעון בע\"מ"
+   },
+   {
+    "project": "אתר 01",
+    "neighborhood": "שכונת הפארק",
+    "price_m2": 7092.0,
+    "date": "2019-08-04",
+    "units": 79,
+    "winners": 22,
+    "subscribers": 505,
+    "status": "בחירת דירות",
+    "provider": "פרץ בוני הנגב-אחים פרץ בע\"מ"
+   },
+   {
+    "project": "אתר 01",
+    "neighborhood": "שכונת הפארק",
+    "price_m2": 7089.0,
+    "date": "2019-08-04",
+    "units": 107,
+    "winners": 14,
+    "subscribers": 533,
+    "status": "בחירת דירות",
+    "provider": "אחים אוזן חברה לבניה בע\"מ"
+   },
+   {
+    "project": "אתר 01",
+    "neighborhood": "שכונת הפארק",
+    "price_m2": 7049.0,
+    "date": "2019-06-26",
+    "units": 4,
+    "winners": 35,
+    "subscribers": 186,
+    "status": "בחירת דירות",
+    "provider": "אאבני דרך מחיר למשתכן פרויקטים בע\"מ"
+   },
+   {
+    "project": "אתר 01",
+    "neighborhood": "שכונת הפארק",
+    "price_m2": 7026.0,
+    "date": "2019-06-26",
+    "units": 13,
+    "winners": 2,
+    "subscribers": 352,
+    "status": "בתהליכי הגרלה",
+    "provider": "פרץ בוני הנגב-אחים פרץ בע\"מ"
+   },
+   {
+    "project": "באר שבע טאצ'",
+    "neighborhood": "שכונת הפארק",
+    "price_m2": 6685.0,
+    "date": "2019-06-25",
+    "units": 39,
+    "winners": 10,
+    "subscribers": 384,
+    "status": "בחירת דירות",
+    "provider": "סלעית טובולסקי פארק באר שבע בע\"מ"
+   },
+   {
+    "project": "באר שבע טאצ'",
+    "neighborhood": "שכונת הפארק",
+    "price_m2": 6748.0,
+    "date": "2019-06-25",
+    "units": 39,
+    "winners": 13,
+    "subscribers": 380,
+    "status": "בחירת דירות",
+    "provider": "שובל מתחמי מגורים בע\"מ"
+   },
+   {
+    "project": "באר שבע טאצ'",
+    "neighborhood": "נחל הפארק",
+    "price_m2": 6328.0,
+    "date": "2019-06-25",
+    "units": 35,
+    "winners": 16,
+    "subscribers": 420,
+    "status": "בחירת דירות",
+    "provider": "סלעית טובולסקי פארק באר שבע בע\"מ"
+   },
+   {
+    "project": "01",
+    "neighborhood": "01",
+    "price_m2": 7389.0,
+    "date": "2019-06-25",
+    "units": 107,
+    "winners": 27,
+    "subscribers": 451,
+    "status": "בחירת דירות",
+    "provider": "ארזים (ג.י.א) בע\"מ"
+   },
+   {
+    "project": "באר שבע טאצ'",
+    "neighborhood": "שכונת הפארק",
+    "price_m2": 6685.0,
+    "date": "2019-05-02",
+    "units": 41,
+    "winners": 2,
+    "subscribers": 208,
+    "status": "בחירת דירות",
+    "provider": "סלעית טובולסקי פארק באר שבע בע\"מ"
+   },
+   {
+    "project": "אתר 01",
+    "neighborhood": "שכונת הפארק",
+    "price_m2": 7026.0,
+    "date": "2019-05-02",
+    "units": 21,
+    "winners": 1,
+    "subscribers": 203,
+    "status": "בתהליכי הגרלה",
+    "provider": "פרץ בוני הנגב-אחים פרץ בע\"מ"
+   },
+   {
+    "project": "באר שבע טאצ'",
+    "neighborhood": "שכונת הפארק",
+    "price_m2": 6748.0,
+    "date": "2019-05-02",
+    "units": 52,
+    "winners": 13,
+    "subscribers": 239,
+    "status": "בחירת דירות",
+    "provider": "שובל מתחמי מגורים בע\"מ"
+   },
+   {
+    "project": "באר שבע טאצ'",
+    "neighborhood": "נחל הפארק",
+    "price_m2": 6328.0,
+    "date": "2019-05-02",
+    "units": 53,
+    "winners": 20,
+    "subscribers": 261,
+    "status": "בחירת דירות",
+    "provider": "סלעית טובולסקי פארק באר שבע בע\"מ"
+   },
+   {
+    "project": "01",
+    "neighborhood": "סיגליות",
+    "price_m2": 7455.0,
+    "date": "2019-05-02",
+    "units": 50,
+    "winners": 52,
+    "subscribers": 282,
+    "status": "בחירת דירות",
+    "provider": "י. אליה ובניו יזמות וקבלני בני"
+   },
+   {
+    "project": "01",
+    "neighborhood": "01",
+    "price_m2": 7389.0,
+    "date": "2019-05-02",
+    "units": 132,
+    "winners": 22,
+    "subscribers": 293,
+    "status": "בחירת דירות",
+    "provider": "ארזים (ג.י.א) בע\"מ"
+   },
+   {
+    "project": "אתר 01",
+    "neighborhood": "שכונת הפארק",
+    "price_m2": 6526.0,
+    "date": "2019-03-18",
+    "units": 14,
+    "winners": 74,
+    "subscribers": 523,
+    "status": "בחירת דירות",
+    "provider": "אביסרור משה ובניו עבודות בנין"
+   },
+   {
+    "project": "אתר 01",
+    "neighborhood": "שכונת הפארק",
+    "price_m2": 7048.0,
+    "date": "2019-03-18",
+    "units": 8,
+    "winners": 3,
+    "subscribers": 398,
+    "status": "בחירת דירות",
+    "provider": "אבני דרך יהלום עפולה בע\"מ"
+   },
+   {
+    "project": "אתר 01",
+    "neighborhood": "שכונת הפארק",
+    "price_m2": 7089.0,
+    "date": "2019-03-17",
+    "units": 19,
+    "winners": 10,
+    "subscribers": 373,
+    "status": "בחירת דירות",
+    "provider": "אחים אוזן חברה לבניה בע\"מ"
+   },
+   {
+    "project": "01",
+    "neighborhood": "סיגליות",
+    "price_m2": 7199.0,
+    "date": "2019-02-13",
+    "units": 53,
+    "winners": 55,
+    "subscribers": 436,
+    "status": "בחירת דירות",
+    "provider": "אבני דרך בית שמש פרויקטים בעמ"
+   },
+   {
+    "project": "01",
+    "neighborhood": "סיגליות",
+    "price_m2": 7455.0,
+    "date": "2019-02-13",
+    "units": 38,
+    "winners": 11,
+    "subscribers": 389,
+    "status": "בחירת דירות",
+    "provider": "י. אליה ובניו יזמות וקבלני בני"
+   },
+   {
+    "project": "01",
+    "neighborhood": "01",
+    "price_m2": 7389.0,
+    "date": "2019-02-13",
+    "units": 128,
+    "winners": 24,
+    "subscribers": 417,
+    "status": "בחירת דירות",
+    "provider": "ארזים (ג.י.א) בע\"מ"
+   },
+   {
+    "project": "באר שבע טאצ'",
+    "neighborhood": "שכונת הפארק",
+    "price_m2": 6748.0,
+    "date": "2019-02-13",
+    "units": 72,
+    "winners": 19,
+    "subscribers": 406,
+    "status": "בחירת דירות",
+    "provider": "שובל מתחמי מגורים בע\"מ"
+   },
+   {
+    "project": "באר שבע טאצ'",
+    "neighborhood": "שכונת הפארק",
+    "price_m2": 6685.0,
+    "date": "2019-02-13",
+    "units": 45,
+    "winners": 5,
+    "subscribers": 414,
+    "status": "בחירת דירות",
+    "provider": "סלעית טובולסקי פארק באר שבע בע\"מ"
+   },
+   {
+    "project": "באר שבע טאצ'",
+    "neighborhood": "נחל הפארק",
+    "price_m2": 6328.0,
+    "date": "2019-02-13",
+    "units": 91,
+    "winners": 36,
+    "subscribers": 451,
+    "status": "בחירת דירות",
+    "provider": "סלעית טובולסקי פארק באר שבע בע\"מ"
+   },
+   {
+    "project": "01",
+    "neighborhood": "סיגליות",
+    "price_m2": 7455.0,
+    "date": "2018-12-16",
+    "units": 4,
+    "winners": 4,
+    "subscribers": 499,
+    "status": "בחירת דירות",
+    "provider": "י. אליה ובניו יזמות וקבלני בני"
+   },
+   {
+    "project": "01",
+    "neighborhood": "01",
+    "price_m2": 7389.0,
+    "date": "2018-12-16",
+    "units": 49,
+    "winners": 34,
+    "subscribers": 561,
+    "status": "בחירת דירות",
+    "provider": "ארזים (ג.י.א) בע\"מ"
+   },
+   {
+    "project": "באר שבע טאצ'",
+    "neighborhood": "שכונת הפארק",
+    "price_m2": 6748.0,
+    "date": "2018-11-19",
+    "units": 47,
+    "winners": 30,
+    "subscribers": 567,
+    "status": "בחירת דירות",
+    "provider": "שובל מתחמי מגורים בע\"מ"
+   },
+   {
+    "project": "באר שבע טאצ'",
+    "neighborhood": "שכונת הפארק",
+    "price_m2": 6685.0,
+    "date": "2018-11-19",
+    "units": 45,
+    "winners": 22,
+    "subscribers": 636,
+    "status": "בחירת דירות",
+    "provider": "סלעית טובולסקי פארק באר שבע בע\"מ"
+   },
+   {
+    "project": "באר שבע טאצ'",
+    "neighborhood": "נחל הפארק",
+    "price_m2": 6328.0,
+    "date": "2018-11-19",
+    "units": 165,
+    "winners": 78,
+    "subscribers": 720,
+    "status": "בחירת דירות",
+    "provider": "סלעית טובולסקי פארק באר שבע בע\"מ"
+   },
+   {
+    "project": "01",
+    "neighborhood": "01",
+    "price_m2": 7389.0,
+    "date": "2018-09-17",
+    "units": 25,
+    "winners": 8,
+    "subscribers": 180,
+    "status": "בחירת דירות",
+    "provider": "ארזים (ג.י.א) בע\"מ"
+   },
+   {
+    "project": "01",
+    "neighborhood": "סיגליות",
+    "price_m2": 7199.0,
+    "date": "2018-08-21",
+    "units": 83,
+    "winners": 36,
+    "subscribers": 818,
+    "status": "בחירת דירות",
+    "provider": "אבני דרך בית שמש פרויקטים בעמ"
+   },
+   {
+    "project": "01",
+    "neighborhood": "סיגליות",
+    "price_m2": 6794.0,
+    "date": "2018-07-08",
+    "units": 63,
+    "winners": 76,
+    "subscribers": 553,
+    "status": "בקרת חוזים",
+    "provider": "רייסדור בנייה בע\"מ"
+   },
+   {
+    "project": "01",
+    "neighborhood": "סיגליות",
+    "price_m2": 6794.0,
+    "date": "2018-04-17",
+    "units": 107,
+    "winners": 50,
+    "subscribers": 476,
+    "status": "בקרת חוזים",
+    "provider": "רייסדור בנייה בע\"מ"
+   },
+   {
+    "project": "אתר 01",
+    "neighborhood": "שכונת הפארק",
+    "price_m2": 7048.0,
+    "date": "2018-04-17",
+    "units": 7,
+    "winners": 0,
+    "subscribers": 208,
+    "status": "בחירת דירות",
+    "provider": "אבני דרך יהלום עפולה בע\"מ"
+   },
+   {
+    "project": "באר שבע טאצ'",
+    "neighborhood": "שכונת הפארק",
+    "price_m2": 6685.0,
+    "date": "2018-04-17",
+    "units": 9,
+    "winners": 1,
+    "subscribers": 245,
+    "status": "בחירת דירות",
+    "provider": "סלעית טובולסקי פארק באר שבע בע\"מ"
+   },
+   {
+    "project": "אתר 01",
+    "neighborhood": "שכונת הפארק",
+    "price_m2": 6526.0,
+    "date": "2018-04-17",
+    "units": 5,
+    "winners": 2,
+    "subscribers": 265,
+    "status": "בחירת דירות",
+    "provider": "אביסרור משה ובניו עבודות בנין"
+   },
+   {
+    "project": "01",
+    "neighborhood": "סיגליות",
+    "price_m2": 7455.0,
+    "date": "2018-04-17",
+    "units": 3,
+    "winners": 0,
+    "subscribers": 245,
+    "status": "בחירת דירות",
+    "provider": "י. אליה ובניו יזמות וקבלני בני"
+   },
+   {
+    "project": "01",
+    "neighborhood": "סיגליות",
+    "price_m2": 7199.0,
+    "date": "2018-04-17",
+    "units": 30,
+    "winners": 7,
+    "subscribers": 281,
+    "status": "בחירת דירות",
+    "provider": "אבני דרך בית שמש פרויקטים בעמ"
+   },
+   {
+    "project": "אתר 01",
+    "neighborhood": "שכונת הפארק",
+    "price_m2": 7092.0,
+    "date": "2018-03-05",
+    "units": 13,
+    "winners": 3,
+    "subscribers": 787,
+    "status": "בחירת דירות",
+    "provider": "פרץ בוני הנגב-אחים פרץ בע\"מ"
+   },
+   {
+    "project": "01",
+    "neighborhood": "סיגליות",
+    "price_m2": 6794.0,
+    "date": "2018-02-25",
+    "units": 210,
+    "winners": 100,
+    "subscribers": 566,
+    "status": "בקרת חוזים",
+    "provider": "רייסדור בנייה בע\"מ"
+   },
+   {
+    "project": "אתר 01",
+    "neighborhood": "שכונת הפארק",
+    "price_m2": 7033.0,
+    "date": "2018-01-18",
+    "units": 37,
+    "winners": 6,
+    "subscribers": 2675,
+    "status": "בחירת דירות",
+    "provider": "אסום - חברה קבלנית לבנין בע\"מ"
+   },
+   {
+    "project": "באר שבע טאצ'",
+    "neighborhood": "שכונת הפארק",
+    "price_m2": 6748.0,
+    "date": "2018-01-18",
+    "units": 39,
+    "winners": 16,
+    "subscribers": 2994,
+    "status": "בחירת דירות",
+    "provider": "שובל מתחמי מגורים בע\"מ"
+   },
+   {
+    "project": "אתר 01",
+    "neighborhood": "אתר 01",
+    "price_m2": 7050.0,
+    "date": "2017-12-07",
+    "units": 91,
+    "winners": 22,
+    "subscribers": 2203,
+    "status": "בתהליכי הגרלה",
+    "provider": "צרפתי שמעון בע\"מ"
+   },
+   {
+    "project": "באר שבע טאצ'",
+    "neighborhood": "נחל הפארק",
+    "price_m2": 6328.0,
+    "date": "2017-12-07",
+    "units": 205,
+    "winners": 64,
+    "subscribers": 2449,
+    "status": "בחירת דירות",
+    "provider": "סלעית טובולסקי פארק באר שבע בע\"מ"
+   },
+   {
+    "project": "אתר 01",
+    "neighborhood": "שכונת הפארק",
+    "price_m2": 7026.0,
+    "date": "2017-12-07",
+    "units": 127,
+    "winners": 23,
+    "subscribers": 2378,
+    "status": "בתהליכי הגרלה",
+    "provider": "פרץ בוני הנגב-אחים פרץ בע\"מ"
+   },
+   {
+    "project": "אתר 01",
+    "neighborhood": "שכונת הפארק",
+    "price_m2": 7089.0,
+    "date": "2017-12-07",
+    "units": 136,
+    "winners": 28,
+    "subscribers": 2245,
+    "status": "בחירת דירות",
+    "provider": "אחים אוזן חברה לבניה בע\"מ"
+   },
+   {
+    "project": "אתר 01",
+    "neighborhood": "אתר 01",
+    "price_m2": 7050.0,
+    "date": "2017-12-07",
+    "units": 186,
+    "winners": 38,
+    "subscribers": 2349,
+    "status": "בתהליכי הגרלה",
+    "provider": "צרפתי שמעון בע\"מ"
+   },
+   {
+    "project": "אתר 01",
+    "neighborhood": "שכונת הפארק",
+    "price_m2": 7049.0,
+    "date": "2017-12-07",
+    "units": 41,
+    "winners": 13,
+    "subscribers": 2328,
+    "status": "בחירת דירות",
+    "provider": "אאבני דרך מחיר למשתכן פרויקטים בע\"מ"
+   },
+   {
+    "project": "באר שבע טאצ'",
+    "neighborhood": "נחל הפארק",
+    "price_m2": 6328.0,
+    "date": "2017-11-09",
+    "units": 168,
+    "winners": 14,
+    "subscribers": 817,
+    "status": "בחירת דירות",
+    "provider": "סלעית טובולסקי פארק באר שבע בע\"מ"
+   },
+   {
+    "project": "אתר 01",
+    "neighborhood": "שכונת הפארק",
+    "price_m2": 7026.0,
+    "date": "2017-11-09",
+    "units": 86,
+    "winners": 0,
+    "subscribers": 754,
+    "status": "בתהליכי הגרלה",
+    "provider": "פרץ בוני הנגב-אחים פרץ בע\"מ"
+   },
+   {
+    "project": "אתר 01",
+    "neighborhood": "שכונת הפארק",
+    "price_m2": 7089.0,
+    "date": "2017-11-09",
+    "units": 90,
+    "winners": 1,
+    "subscribers": 734,
+    "status": "בחירת דירות",
+    "provider": "אחים אוזן חברה לבניה בע\"מ"
+   },
+   {
+    "project": "אתר 01",
+    "neighborhood": "אתר 01",
+    "price_m2": 7050.0,
+    "date": "2017-11-09",
+    "units": 120,
+    "winners": 0,
+    "subscribers": 733,
+    "status": "בתהליכי הגרלה",
+    "provider": "צרפתי שמעון בע\"מ"
+   },
+   {
+    "project": "אתר 01",
+    "neighborhood": "שכונת הפארק",
+    "price_m2": 7049.0,
+    "date": "2017-11-09",
+    "units": 31,
+    "winners": 1,
+    "subscribers": 728,
+    "status": "בחירת דירות",
+    "provider": "אאבני דרך מחיר למשתכן פרויקטים בע\"מ"
+   },
+   {
+    "project": "אתר 01",
+    "neighborhood": "אתר 01",
+    "price_m2": 7050.0,
+    "date": "2017-11-09",
+    "units": 143,
+    "winners": 24,
+    "subscribers": 754,
+    "status": "בתהליכי הגרלה",
+    "provider": "צרפתי שמעון בע\"מ"
+   },
+   {
+    "project": "אתר 01",
+    "neighborhood": "שכונת הפארק",
+    "price_m2": 7033.0,
+    "date": "2017-11-09",
+    "units": 61,
+    "winners": 8,
+    "subscribers": 735,
+    "status": "בחירת דירות",
+    "provider": "אסום - חברה קבלנית לבנין בע\"מ"
+   },
+   {
+    "project": "באר שבע טאצ'",
+    "neighborhood": "שכונת הפארק",
+    "price_m2": 6748.0,
+    "date": "2017-11-09",
+    "units": 113,
+    "winners": 24,
+    "subscribers": 789,
+    "status": "בחירת דירות",
+    "provider": "שובל מתחמי מגורים בע\"מ"
+   },
+   {
+    "project": "אתר 01",
+    "neighborhood": "שכונת הפארק",
+    "price_m2": 7092.0,
+    "date": "2017-11-09",
+    "units": 100,
+    "winners": 14,
+    "subscribers": 778,
+    "status": "בחירת דירות",
+    "provider": "פרץ בוני הנגב-אחים פרץ בע\"מ"
+   },
+   {
+    "project": "באר שבע טאצ'",
+    "neighborhood": "שכונת הפארק",
+    "price_m2": 6685.0,
+    "date": "2017-11-09",
+    "units": 87,
+    "winners": 15,
+    "subscribers": 806,
+    "status": "בחירת דירות",
+    "provider": "סלעית טובולסקי פארק באר שבע בע\"מ"
+   },
+   {
+    "project": "אתר 01",
+    "neighborhood": "שכונת הפארק",
+    "price_m2": 7048.0,
+    "date": "2017-11-09",
+    "units": 52,
+    "winners": 5,
+    "subscribers": 753,
+    "status": "בחירת דירות",
+    "provider": "אבני דרך יהלום עפולה בע\"מ"
+   },
+   {
+    "project": "אתר 01",
+    "neighborhood": "שכונת הפארק",
+    "price_m2": 6526.0,
+    "date": "2017-11-09",
+    "units": 118,
+    "winners": 42,
+    "subscribers": 886,
+    "status": "בחירת דירות",
+    "provider": "אביסרור משה ובניו עבודות בנין"
+   },
+   {
+    "project": "01",
+    "neighborhood": "סיגליות",
+    "price_m2": 6794.0,
+    "date": "2017-07-20",
+    "units": 319,
+    "winners": 93,
+    "subscribers": 1885,
+    "status": "בקרת חוזים",
+    "provider": "רייסדור בנייה בע\"מ"
+   },
+   {
+    "project": "01",
+    "neighborhood": "סיגליות",
+    "price_m2": 7455.0,
+    "date": "2017-07-20",
+    "units": 74,
+    "winners": 7,
+    "subscribers": 1731,
+    "status": "בחירת דירות",
+    "provider": "י. אליה ובניו יזמות וקבלני בני"
+   },
+   {
+    "project": "01",
+    "neighborhood": "סיגליות",
+    "price_m2": 7199.0,
+    "date": "2017-07-20",
+    "units": 112,
+    "winners": 14,
+    "subscribers": 1805,
+    "status": "בחירת דירות",
+    "provider": "אבני דרך בית שמש פרויקטים בעמ"
+   },
+   {
+    "project": "01",
+    "neighborhood": "01",
+    "price_m2": 7389.0,
+    "date": "2017-07-20",
+    "units": 227,
+    "winners": 27,
+    "subscribers": 1860,
+    "status": "בחירת דירות",
+    "provider": "ארזים (ג.י.א) בע\"מ"
+   }
+  ]
+ },
+ "supply": {
+  "planning": {
+   "plans": [
+    {
+     "plan_number": "תמל/1016",
+     "name": "שכונת הרקפות",
+     "stage": "תוקף",
+     "developer": "רמ\"י",
+     "units": 4148,
+     "threshold_date": "17/12/2015",
+     "approved_date": "04/01/2017",
+     "rmi_link": "http://apps.land.gov.il/IturTabot2/taba2.aspx?tochnitId=6009118",
+     "mavat_link": "http://mavat.moin.gov.il/MavatPS/Forms/SV4.aspx?tid=4&mp_id=CliOXy1vENpmq0MYlmjJKKj2SoKOucJsRNKTa32LX68NdMKPLiq6EbH%2FTgH4sp0ye1zZkNCCCSNbcDsqt5IkwHz46b6wBio8BkrxuVhgF74%3D"
+    },
+    {
+     "plan_number": "122/102/02/5",
+     "name": "רמות ב מתחם 3",
+     "stage": "תוקף",
+     "developer": "משרד הבינוי והשיכון",
+     "units": 1424,
+     "threshold_date": "-",
+     "approved_date": "19/12/2002",
+     "rmi_link": "http://apps.land.gov.il/IturTabot2/taba2.aspx?tochnitId=6003941",
+     "mavat_link": ""
+    },
+    {
+     "plan_number": "148/102/02/5",
+     "name": "רמות ב אצבעות ציפוף",
+     "stage": "תוקף",
+     "developer": "משרד הבינוי והשיכון",
+     "units": 1202,
+     "threshold_date": "-",
+     "approved_date": "06/03/2006",
+     "rmi_link": "http://apps.land.gov.il/IturTabot2/taba2.aspx?tochnitId=6005253",
+     "mavat_link": ""
+    },
+    {
+     "plan_number": "128/102/02/5",
+     "name": "רמות ב- מרכז",
+     "stage": "תוקף",
+     "developer": "משרד הבינוי והשיכון",
+     "units": 1088,
+     "threshold_date": "-",
+     "approved_date": "29/03/2005",
+     "rmi_link": "http://apps.land.gov.il/IturTabot2/taba2.aspx?tochnitId=6004330",
+     "mavat_link": ""
+    },
+    {
+     "plan_number": "605-0225284",
+     "name": "שכונת \"פארק הנחל\" - באר שבע",
+     "stage": "תוקף",
+     "developer": "רמ\"י",
+     "units": 912,
+     "threshold_date": "04/02/2015",
+     "approved_date": "28/09/2016",
+     "rmi_link": "http://apps.land.gov.il/IturTabot2/taba2.aspx?tochnitId=6009297",
+     "mavat_link": "http://mavat.moin.gov.il/MavatPS/Forms/SV4.aspx?tid=4&mp_id=CliOXy1vENpPP%2F%2BSyQQAiRojsSfKLfyWJi8%2FsND4hLcmZlALQkCYH7TZF5Bi5JY9ngRcIRivqEs4fiUzbej4QQJ9Q2Em3fDhcrZIjW2Cp9E%3D"
+    },
+    {
+     "plan_number": "129/102/02/5",
+     "name": "מבואה מערבית",
+     "stage": "תוקף",
+     "developer": "רמ\"י",
+     "units": 274,
+     "threshold_date": "22/03/2004",
+     "approved_date": "15/02/2007",
+     "rmi_link": "http://apps.land.gov.il/IturTabot2/taba2.aspx?tochnitId=6005522",
+     "mavat_link": ""
+    },
+    {
+     "plan_number": "114/102/02/5",
+     "name": "האיצטדיון",
+     "stage": "תוקף",
+     "developer": "לא נרשם",
+     "units": 243,
+     "threshold_date": "-",
+     "approved_date": "20/10/2003",
+     "rmi_link": "http://apps.land.gov.il/IturTabot2/taba2.aspx?tochnitId=6004951",
+     "mavat_link": ""
+    },
+    {
+     "plan_number": "106/108/03/5",
+     "name": "שכונה ג בתי אבן",
+     "stage": "תוקף",
+     "developer": "משרד הבינוי והשיכון",
+     "units": 166,
+     "threshold_date": "-",
+     "approved_date": "06/10/1996",
+     "rmi_link": "http://apps.land.gov.il/IturTabot2/taba2.aspx?tochnitId=6002743",
+     "mavat_link": ""
+    },
+    {
+     "plan_number": "201/03/5",
+     "name": "רמות ב שכ הרכס",
+     "stage": "תוקף",
+     "developer": "משרד הבינוי והשיכון",
+     "units": 120,
+     "threshold_date": "-",
+     "approved_date": "12/07/2000",
+     "rmi_link": "http://apps.land.gov.il/IturTabot2/taba2.aspx?tochnitId=6003557",
+     "mavat_link": ""
+    },
+    {
+     "plan_number": "10/212/03/5",
+     "name": "4-נוה מנחם א",
+     "stage": "תוקף",
+     "developer": "משרד הבינוי והשיכון",
+     "units": 120,
+     "threshold_date": "-",
+     "approved_date": "12/07/2001",
+     "rmi_link": "http://apps.land.gov.il/IturTabot2/taba2.aspx?tochnitId=6003763",
+     "mavat_link": ""
+    },
+    {
+     "plan_number": "2/199/03/5",
+     "name": "רמות ב מערבית ציפוף",
+     "stage": "תוקף",
+     "developer": "משרד הבינוי והשיכון",
+     "units": 110,
+     "threshold_date": "-",
+     "approved_date": "04/08/2002",
+     "rmi_link": "http://apps.land.gov.il/IturTabot2/taba2.aspx?tochnitId=6003893",
+     "mavat_link": ""
+    },
+    {
+     "plan_number": "134/102/02/5",
+     "name": "שדרות רגר שינוי",
+     "stage": "תוקף",
+     "developer": "משרד הבינוי והשיכון",
+     "units": 68,
+     "threshold_date": "-",
+     "approved_date": "15/04/2004",
+     "rmi_link": "http://apps.land.gov.il/IturTabot2/taba2.aspx?tochnitId=6004190",
+     "mavat_link": ""
+    },
+    {
+     "plan_number": "217/102/02/5",
+     "name": "נאות לון צפון",
+     "stage": "תוקף",
+     "developer": "רמ\"י",
+     "units": 51,
+     "threshold_date": "18/06/2013",
+     "approved_date": "04/09/2014",
+     "rmi_link": "http://apps.land.gov.il/IturTabot2/taba2.aspx?tochnitId=6008420",
+     "mavat_link": ""
+    },
+    {
+     "plan_number": "223/03/5",
+     "name": "באר שבע",
+     "stage": "תוקף",
+     "developer": "משרד הבינוי והשיכון",
+     "units": 28,
+     "threshold_date": "-",
+     "approved_date": "26/11/2012",
+     "rmi_link": "http://apps.land.gov.il/IturTabot2/taba2.aspx?tochnitId=6007001",
+     "mavat_link": ""
+    },
+    {
+     "plan_number": "222/03/5",
+     "name": "כלניות",
+     "stage": "תוקף",
+     "developer": "רמ\"י",
+     "units": 5,
+     "threshold_date": "-",
+     "approved_date": "14/11/2012",
+     "rmi_link": "http://apps.land.gov.il/IturTabot2/taba2.aspx?tochnitId=6007002",
+     "mavat_link": ""
+    },
+    {
+     "plan_number": "206/102/02/5",
+     "name": "לב לנוי (בי\"ס טכני ח\"א)",
+     "stage": "תוקף",
+     "developer": "רמ\"י",
+     "units": 3,
+     "threshold_date": "02/08/2011",
+     "approved_date": "16/12/2012",
+     "rmi_link": "http://apps.land.gov.il/IturTabot2/taba2.aspx?tochnitId=6007015",
+     "mavat_link": ""
+    },
+    {
+     "plan_number": "5/במ/198",
+     "name": "נוה זאב פלח 7",
+     "stage": "תוקף",
+     "developer": "רמ\"י",
+     "units": 1,
+     "threshold_date": "-",
+     "approved_date": "10/12/2000",
+     "rmi_link": "http://apps.land.gov.il/IturTabot2/taba2.aspx?tochnitId=6003698",
+     "mavat_link": ""
+    }
+   ],
+   "total_units": 9963,
+   "by_stage": {
+    "תוקף": 9963
+   }
+  },
+  "renewal": {
+   "complexes": [
+    {
+     "complex": "העיר העתיקה",
+     "number": 100061,
+     "existing_units": 450,
+     "added_units": 2550,
+     "planned_units": 3000,
+     "declared": "02/08/2020",
+     "track": "רשויות",
+     "status": "תכנית מאושרת לפני מימוש",
+     "permits_total": "",
+     "in_progress": "לא                                                                                                                                                                                                                                                             ",
+     "plan_number": "605-0450627",
+     "map_link": "https://www.govmap.gov.il/map.html?lay=ADD_PROJECTS_UR_MUCHRAZ&bs=moch_projects|MISPARPROJECT~100061                                                                                                                                                           ",
+     "year_effective": "2025                                                                                                                                                                                                                                                           "
+    },
+    {
+     "complex": "מתחם טוביהו הצבי",
+     "number": 5007429,
+     "existing_units": 144,
+     "added_units": 2249,
+     "planned_units": 2393,
+     "declared": "",
+     "track": "",
+     "status": "תכנון סטטוטורי",
+     "permits_total": "",
+     "in_progress": "לא                                                                                                                                                                                                                                                             ",
+     "plan_number": "605-1337302",
+     "map_link": "https://www.govmap.gov.il/map.html?lay=ADD_PROJECTS_UR_MUCHRAZ&bs=moch_projects|MISPARPROJECT~5007429                                                                                                                                                          ",
+     "year_effective": ""
+    },
+    {
+     "complex": "הצדיק מירושלים",
+     "number": 100076,
+     "existing_units": 265,
+     "added_units": 1366,
+     "planned_units": 1640,
+     "declared": "22/12/2021",
+     "track": "רשויות",
+     "status": "תכנון סטטוטורי",
+     "permits_total": "",
+     "in_progress": "לא                                                                                                                                                                                                                                                             ",
+     "plan_number": "605-0991604",
+     "map_link": "https://www.govmap.gov.il/map.html?lay=ADD_PROJECTS_UR_MUCHRAZ&bs=moch_projects|MISPARPROJECT~100076                                                                                                                                                           ",
+     "year_effective": ""
+    },
+    {
+     "complex": "קרן היסוד",
+     "number": 8003285,
+     "existing_units": 250,
+     "added_units": 846,
+     "planned_units": 1096,
+     "declared": "",
+     "track": "טרם הוכרז",
+     "status": "תכנון ראשוני",
+     "permits_total": "",
+     "in_progress": "לא                                                                                                                                                                                                                                                             ",
+     "plan_number": "",
+     "map_link": "https://www.govmap.gov.il/map.html?lay=ADD_PROJECTS_UR_MUCHRAZ&bs=moch_projects|MISPARPROJECT~8003285                                                                                                                                                          ",
+     "year_effective": ""
+    },
+    {
+     "complex": "יעקב אבינו - רגר",
+     "number": 4395,
+     "existing_units": 136,
+     "added_units": 816,
+     "planned_units": 952,
+     "declared": "",
+     "track": "",
+     "status": "תכנית מאושרת לפני מימוש",
+     "permits_total": "",
+     "in_progress": "לא                                                                                                                                                                                                                                                             ",
+     "plan_number": "תמל/2049/א",
+     "map_link": "https://www.govmap.gov.il/map.html?lay=ADD_PROJECTS_UR_MUCHRAZ&bs=moch_projects|MISPARPROJECT~4395                                                                                                                                                             ",
+     "year_effective": "2025                                                                                                                                                                                                                                                           "
+    },
+    {
+     "complex": "אורות",
+     "number": 41539,
+     "existing_units": 176,
+     "added_units": 689,
+     "planned_units": 846,
+     "declared": "26/03/2019",
+     "track": "רשויות",
+     "status": "תכנית מאושרת לפני מימוש",
+     "permits_total": "",
+     "in_progress": "לא                                                                                                                                                                                                                                                             ",
+     "plan_number": "605-0907691",
+     "map_link": "https://www.govmap.gov.il/map.html?lay=ADD_PROJECTS_UR_MUCHRAZ&bs=moch_projects|MISPARPROJECT~41539                                                                                                                                                            ",
+     "year_effective": "2024                                                                                                                                                                                                                                                           "
+    },
+    {
+     "complex": "וינגייט",
+     "number": 41707,
+     "existing_units": 175,
+     "added_units": 624,
+     "planned_units": 799,
+     "declared": "11/08/2019",
+     "track": "רשויות",
+     "status": "תכנון סטטוטורי",
+     "permits_total": "",
+     "in_progress": "לא                                                                                                                                                                                                                                                             ",
+     "plan_number": "605-1004928",
+     "map_link": "https://www.govmap.gov.il/map.html?lay=ADD_PROJECTS_UR_MUCHRAZ&bs=moch_projects|MISPARPROJECT~41707                                                                                                                                                            ",
+     "year_effective": ""
+    },
+    {
+     "complex": "מרכז גילת",
+     "number": 5009131,
+     "existing_units": 66,
+     "added_units": 409,
+     "planned_units": 756,
+     "declared": "28/12/2022",
+     "track": "רשויות",
+     "status": "תכנון ראשוני",
+     "permits_total": "",
+     "in_progress": "לא                                                                                                                                                                                                                                                             ",
+     "plan_number": "605-1153691",
+     "map_link": "https://www.govmap.gov.il/map.html?lay=ADD_PROJECTS_UR_MUCHRAZ&bs=moch_projects|MISPARPROJECT~5009131                                                                                                                                                          ",
+     "year_effective": ""
+    },
+    {
+     "complex": "מרכז ח\"ן",
+     "number": 5008808,
+     "existing_units": 96,
+     "added_units": 616,
+     "planned_units": 650,
+     "declared": "28/12/2022",
+     "track": "רשויות",
+     "status": "תכנון ראשוני",
+     "permits_total": "",
+     "in_progress": "לא                                                                                                                                                                                                                                                             ",
+     "plan_number": "605-1154186",
+     "map_link": "https://www.govmap.gov.il/map.html?lay=ADD_PROJECTS_UR_MUCHRAZ&bs=moch_projects|MISPARPROJECT~5008808                                                                                                                                                          ",
+     "year_effective": ""
+    },
+    {
+     "complex": "אורן",
+     "number": 100060,
+     "existing_units": 42,
+     "added_units": 599,
+     "planned_units": 641,
+     "declared": "30/11/2020",
+     "track": "רשויות",
+     "status": "תכנית מאושרת לפני מימוש",
+     "permits_total": "",
+     "in_progress": "לא                                                                                                                                                                                                                                                             ",
+     "plan_number": "605-0881524",
+     "map_link": "https://www.govmap.gov.il/map.html?lay=ADD_PROJECTS_UR_MUCHRAZ&bs=moch_projects|MISPARPROJECT~100060                                                                                                                                                           ",
+     "year_effective": "2017                                                                                                                                                                                                                                                           "
+    },
+    {
+     "complex": "ביאליק שמעוני",
+     "number": 8000764,
+     "existing_units": 73,
+     "added_units": 382,
+     "planned_units": 455,
+     "declared": "",
+     "track": "",
+     "status": "תכנון סטטוטורי",
+     "permits_total": "",
+     "in_progress": "לא                                                                                                                                                                                                                                                             ",
+     "plan_number": "605-1354968",
+     "map_link": "https://www.govmap.gov.il/map.html?lay=ADD_PROJECTS_UR_MUCHRAZ&bs=moch_projects|MISPARPROJECT~8000764                                                                                                                                                          ",
+     "year_effective": ""
+    },
+    {
+     "complex": "שמשון המשחררים",
+     "number": 4289,
+     "existing_units": 42,
+     "added_units": 210,
+     "planned_units": 252,
+     "declared": "",
+     "track": "",
+     "status": "תכנון סטטוטורי",
+     "permits_total": "",
+     "in_progress": "לא                                                                                                                                                                                                                                                             ",
+     "plan_number": "605-0184234",
+     "map_link": "https://www.govmap.gov.il/map.html?lay=ADD_PROJECTS_UR_MUCHRAZ&bs=moch_projects|MISPARPROJECT~4289                                                                                                                                                             ",
+     "year_effective": ""
+    },
+    {
+     "complex": "שכונה ג'",
+     "number": 4204,
+     "existing_units": 40,
+     "added_units": 0,
+     "planned_units": 242,
+     "declared": "29/06/2017",
+     "track": "מיסוי",
+     "status": "תכנית מאושרת - אחרי רישוי",
+     "permits_total": "242",
+     "in_progress": "לא                                                                                                                                                                                                                                                             ",
+     "plan_number": "605-0187609",
+     "map_link": "https://www.govmap.gov.il/map.html?lay=ADD_PROJECTS_UR_MUCHRAZ&bs=moch_projects|MISPARPROJECT~4204                                                                                                                                                             ",
+     "year_effective": "2016                                                                                                                                                                                                                                                           "
+    },
+    {
+     "complex": "מתחם בן גוריון",
+     "number": 5007425,
+     "existing_units": 0,
+     "added_units": 0,
+     "planned_units": 0,
+     "declared": "",
+     "track": "",
+     "status": "תכנון ראשוני",
+     "permits_total": "",
+     "in_progress": "לא                                                                                                                                                                                                                                                             ",
+     "plan_number": "תמל/2074",
+     "map_link": "https://www.govmap.gov.il/map.html?lay=ADD_PROJECTS_UR_MUCHRAZ&bs=moch_projects|MISPARPROJECT~5007425                                                                                                                                                          ",
+     "year_effective": ""
+    }
+   ],
+   "existing_units": 1955,
+   "added_units": 11356,
+   "planned_units": 13722,
+   "approved_and_active": 5
+  },
+  "construction": {
+   "sites": [
+    {
+     "site": "שכ' הרכס",
+     "units": 2825,
+     "projects": 194,
+     "last_contract": "30/06/2010"
+    },
+    {
+     "site": "שכונת הפארק",
+     "units": 2350,
+     "projects": 97,
+     "last_contract": "30/08/2020"
+    },
+    {
+     "site": "נווה זאב 05",
+     "units": 1049,
+     "projects": 59,
+     "last_contract": "28/09/2014"
+    },
+    {
+     "site": "סיגליות",
+     "units": 850,
+     "projects": 27,
+     "last_contract": "12/12/2016"
+    },
+    {
+     "site": "שדרות רגר",
+     "units": 582,
+     "projects": 12,
+     "last_contract": "20/07/2011"
+    },
+    {
+     "site": "שכ' ג' 1",
+     "units": 317,
+     "projects": 4,
+     "last_contract": "06/03/2013"
+    },
+    {
+     "site": "שכ' ו' 3",
+     "units": 292,
+     "projects": 150,
+     "last_contract": "30/06/2010"
+    },
+    {
+     "site": "שכונת כלניות",
+     "units": 128,
+     "projects": 39,
+     "last_contract": "25/08/2015"
+    },
+    {
+     "site": "נווה זאב 04",
+     "units": 124,
+     "projects": 11,
+     "last_contract": "28/01/2004"
+    },
+    {
+     "site": "נווה טל",
+     "units": 107,
+     "projects": 15,
+     "last_contract": "25/08/2010"
+    },
+    {
+     "site": "נוה מנחם 3-א",
+     "units": 80,
+     "projects": 8,
+     "last_contract": "28/07/1997"
+    },
+    {
+     "site": "נווה זאב 02",
+     "units": 41,
+     "projects": 1,
+     "last_contract": "05/10/1999"
+    },
+    {
+     "site": "שכ' ד' 6",
+     "units": 35,
+     "projects": 2,
+     "last_contract": "05/10/2011"
+    },
+    {
+     "site": "שכ' ו' 4",
+     "units": 8,
+     "projects": 4,
+     "last_contract": "25/01/2012"
+    },
+    {
+     "site": "שכ' יא' 2",
+     "units": 3,
+     "projects": 3,
+     "last_contract": "25/09/2011"
+    }
+   ],
+   "total_units": 8791
+  }
+ },
+ "caveats": [
+  "Цены — по льготной программе «Дира ба-анаха», они ниже свободного рынка.",
+  "Реестр всех сделок nadlan.gov.il закрыт reCAPTCHA Enterprise — свободные рыночные цены по конкретным квартирам недоступны.",
+  "Индекс цен на жильё ЦСБ из песочницы не отдаёт JSON, поэтому общерыночный тренд по Южному округу не приведён.",
+  "Общий ряд «по городу» составной: в разные годы разыгрывались разные районы, поэтому его рост частично отражает смену района, а не рост цен. Смотрите динамику внутри одного района.",
+  "Цепной индекс рвётся между 2024 и 2025: раньше разыгрывались פסגת רמות, позже — רקפות. Сравнивать эти годы напрямую нельзя."
+ ]
+}

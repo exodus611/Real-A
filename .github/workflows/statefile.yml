@@ -1,0 +1,50 @@
+name: Project memory check
+
+on:
+  push:
+    paths:
+      - 'NOTES.md'
+      - 'CLAUDE.md'
+      - 'AGENTS.md'
+      - 'GEMINI.md'
+      - 'agent.md'
+      - 'instructions.md'
+      - 'PROTOCOL.md'
+      - 'docs/PROTOCOL.md'
+      - '.cursorrules'
+      - '.cursor/rules/**'
+      - '.github/copilot-instructions.md'
+      - '.github/workflows/statefile.yml'
+  pull_request:
+    paths:
+      - 'NOTES.md'
+      - 'CLAUDE.md'
+      - 'AGENTS.md'
+      - 'GEMINI.md'
+      - 'agent.md'
+      - 'instructions.md'
+      - 'PROTOCOL.md'
+      - 'docs/PROTOCOL.md'
+      - '.cursorrules'
+      - '.cursor/rules/**'
+      - '.github/copilot-instructions.md'
+      - '.github/workflows/statefile.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check-memory:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Check project memory
+        # statefile v0.2.3, pinned to an immutable commit
+        uses: exodus611/statefile@8e9dc90f98ee181b885fec72ce7f771b66d60057
+        with:
+          state-file: NOTES.md
+          max-age-days: '14'
+          strict: 'true'

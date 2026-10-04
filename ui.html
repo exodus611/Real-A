@@ -1,0 +1,766 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Кирьят-Гат — цены на квартиры по реальным сделкам</title>
+<style>
+:root{--bg:#0e1116;--panel:#161b22;--panel2:#1c2330;--line:#2a3341;--txt:#e6edf3;--dim:#9aa7b4;
+--accent:#4aa3ff;--new:#3fb950;--pit:#d29922;--old:#8b949e;--bad:#f85149}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--txt);
+ font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}
+a{color:var(--accent)}
+.wrap{max-width:1200px;margin:0 auto;padding:24px 18px 64px}
+header{border-bottom:1px solid var(--line);padding-bottom:16px;margin-bottom:20px}
+h1{margin:0 0 6px;font-size:25px;letter-spacing:-.2px}
+h2{margin:32px 0 12px;font-size:19px}
+h3{margin:0 0 8px;font-size:12.5px;color:var(--dim);font-weight:600;text-transform:uppercase;letter-spacing:.6px}
+.sub{color:var(--dim);font-size:13.5px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+.tab{background:var(--panel);border:1px solid var(--line);color:var(--dim);padding:9px 16px;border-radius:999px;
+ cursor:pointer;font-size:14px;font-weight:600}
+.tab.on{background:var(--accent);border-color:var(--accent);color:#04121f}
+.grid{display:grid;gap:14px}
+.g4{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.g2{grid-template-columns:repeat(auto-fit,minmax(330px,1fr))}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px}
+.kpi{font-size:25px;font-weight:700;letter-spacing:-.5px;margin:2px 0}
+.kpi small{font-size:12.5px;font-weight:500;color:var(--dim)}
+.delta{font-size:14px;font-weight:700}
+.up{color:var(--new)}.down{color:var(--bad)}
+table{width:100%;border-collapse:collapse;font-size:13.5px}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--dim);font-weight:600;font-size:11.5px;text-transform:uppercase;letter-spacing:.4px}
+tr:hover td{background:#1a212b}
+.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.he{direction:rtl;text-align:right;unicode-bidi:isolate}
+.badge{display:inline-block;padding:2px 9px;border-radius:999px;font-size:12px;font-weight:600;white-space:nowrap}
+.b-good{background:rgba(63,185,80,.16);color:var(--new)}
+.b-warn{background:rgba(210,153,34,.16);color:var(--pit)}
+.b-bad{background:rgba(248,81,73,.16);color:var(--bad)}
+.b-dim{background:rgba(154,167,180,.14);color:var(--dim)}
+.note{border-left:3px solid var(--pit);background:rgba(210,153,34,.08);padding:12px 14px;border-radius:0 8px 8px 0;margin:14px 0}
+.note.bad{border-color:var(--bad);background:rgba(248,81,73,.08)}
+.note.info{border-color:var(--accent);background:rgba(74,163,255,.08)}
+ul,ol{margin:8px 0;padding-left:20px}li{margin:4px 0}
+button{background:var(--panel2);border:1px solid var(--line);color:var(--txt);padding:9px 15px;border-radius:8px;
+ cursor:pointer;font-size:14px;font-weight:600}
+button:hover{border-color:var(--accent);color:var(--accent)}
+button.ghost{background:transparent;color:var(--dim);font-weight:500}
+button:disabled{opacity:.45;cursor:wait}
+input,select{background:var(--panel2);border:1px solid var(--line);color:var(--txt);padding:8px 12px;border-radius:8px;font-size:14px}
+svg{max-width:100%;height:auto;display:block}
+.legend{display:flex;gap:16px;flex-wrap:wrap;font-size:12.5px;color:var(--dim);margin-top:8px}
+.legend i{display:inline-block;width:11px;height:11px;border-radius:3px;margin-right:5px;vertical-align:-1px}
+pre{background:#0b0e13;border:1px solid var(--line);border-radius:8px;padding:13px;overflow:auto;
+ font-size:12.5px;line-height:1.5;color:#c9d5e1;white-space:pre-wrap;
+ font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+.mono{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12.5px}
+.hidden{display:none}
+.foot{margin-top:40px;padding-top:16px;border-top:1px solid var(--line);color:var(--dim);font-size:12.5px}
+.bands{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
+.band{display:grid;grid-template-columns:88px 1fr 46px;gap:8px;align-items:center;font-size:12.5px;margin:3px 0}
+.band span.bar{height:15px;border-radius:3px;background:var(--accent);min-width:2px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1 id="title">Кирьят-Гат — квартиры</h1>
+  <div class="sub" id="meta">загрузка…</div>
+  <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:12px">
+    <input id="city" list="cities" value="__CITY__" style="direction:rtl;min-width:210px">
+    <datalist id="cities">
+      <option value="קרית גת"><option value="באר שבע"><option value="אשקלון"><option value="אשדוד">
+      <option value="נתיבות"><option value="אופקים"><option value="שדרות"><option value="ירוחם">
+      <option value="דימונה"><option value="ערד"><option value="אילת"><option value="פתח תקווה">
+    </datalist>
+    <button id="go">Показать город</button>
+    <button id="rebuild" class="ghost" title="заново опросить реестр сделок (~30 секунд)">Пересобрать</button>
+    <span class="sub" id="busy"></span>
+  </div>
+  <div class="tabs">
+    <button class="tab on" data-t="prices">Цены и их изменение</button>
+    <button class="tab" data-t="addresses">Улицы и районы</button>
+    <button class="tab" data-t="renewal">Районы реновации</button>
+    <button class="tab" data-t="future">Что построят</button>
+    <button class="tab" data-t="telegram">Telegram</button>
+    <button class="tab" data-t="about">Откуда данные</button>
+  </div>
+</header>
+
+<!-- ================= ЦЕНЫ ================= -->
+<section id="prices">
+  <div class="grid g4" id="kpis"></div>
+  <div id="partial-note"></div>
+
+  <h2>Цена за м² по годам — три сегмента раздельно</h2>
+  <div class="card">
+    <div id="chart-years"></div>
+    <div class="legend">
+      <span><i style="background:var(--new)"></i>новые готовые</span>
+      <span><i style="background:var(--pit)"></i>котлован (покупка до сдачи)</span>
+      <span><i style="background:var(--old)"></i>вторичка</span>
+    </div>
+    <div class="sub" style="margin-top:10px">
+      Разделение обязательное: у котлована в поле «год постройки» стоит <b>плановый год сдачи</b>,
+      поэтому в данных встречаются 2029 и 2030. Смешанная медиана по «всем новым» после 2022 года
+      сравнивает готовые квартиры с заморозкой денег на три года вперёд — и для решений непригодна.
+    </div>
+  </div>
+
+  <h2>Поквартально — где именно начался перелом</h2>
+  <div class="card"><div id="chart-quarters"></div></div>
+
+  <h2>Расслоение рынка: распределение сделок по цене за м²</h2>
+  <div class="bands" id="bands"></div>
+  <div class="note info" id="bands-note"></div>
+
+  <h2>Новые квартиры по числу комнат</h2>
+  <div class="card" style="overflow:auto"><table id="tbl-rooms"></table></div>
+
+  <h2>Участки (гуш/хелька) — как это выглядит в самом реестре</h2>
+  <div class="note info">
+    <b>В реестре сделок адресов нет вообще</b> — только кадастровое деление: гуш и хелька.
+    Названия улиц добавлены отдельным слоем, и они есть на вкладке
+    <b>«Улицы и районы»</b>: там покрыто <span id="cov-inline">—</span> сделок города,
+    с индексами, координатами и статистическими районами ЦСБ.
+    Таблица ниже — это сырой срез самого реестра, без адресной привязки: она показывает,
+    на каких участках сосредоточено всего сделок и где медиана выше.
+  </div>
+  <div class="card" style="overflow:auto"><table id="tbl-areas"></table></div>
+
+  <h2>Последние сделки</h2>
+  <div class="card" style="overflow:auto"><table id="tbl-recent"></table></div>
+</section>
+
+<!-- ================= АДРЕСА ================= -->
+<section id="addresses" class="hidden">
+  <div class="grid g4" id="addr-kpis"></div>
+  <div class="note info" id="addr-note"></div>
+
+  <h2>Схема города: комплексы реновации и цены улиц</h2>
+  <div class="card">
+    <div id="addr-map"></div>
+    <div class="legend" id="addr-map-legend"></div>
+    <div class="sub" style="margin-top:8px">
+      Положение настоящее — по центроидам полигонов из GIS-слоя минстроя и по координатам кадастровых
+      участков. Масштаб по осям общий, поэтому расстояния между комплексами переданы верно.
+      Внешние карты в предпросмотре не загружаются, поэтому вместо Leaflet здесь inline-SVG;
+      ссылки на GovMap и mavat в таблице реновации открывают те же границы на настоящей карте.
+    </div>
+  </div>
+
+  <h2>Цена за м² и удалённость от центра города</h2>
+  <div class="card">
+    <div id="chart-scatter"></div>
+    <div class="sub" style="margin-top:8px">
+      Каждый кружок — улица, размер кружка пропорционален числу сделок. Если бы цена определялась
+      только расстоянием до центра, всё легло бы вдоль одной линии.
+    </div>
+  </div>
+
+  <h2>Улицы — <span id="addr-filter-wrap" style="display:inline-flex;gap:8px;align-items:center">
+    <input id="addr-q" placeholder="фильтр по названию" style="width:190px">
+    <select id="addr-sort">
+      <option value="deals">по числу сделок</option>
+      <option value="m2desc">дороже всего</option>
+      <option value="m2asc">дешевле всего</option>
+      <option value="newdesc">дороже всего (новые)</option>
+      <option value="kmdesc">дальше от центра</option>
+    </select>
+  </span></h2>
+  <div class="card" style="overflow:auto"><table id="tbl-streets"></table></div>
+  <div class="sub" id="addr-streets-note"></div>
+
+  <h2>Статистические районы ЦСБ</h2>
+  <div class="card" style="overflow:auto"><table id="tbl-stat-areas"></table></div>
+  <div class="note" id="addr-areas-note"></div>
+
+  <h2>Что именно здесь не так с точностью</h2>
+  <div class="card sub" id="addr-caveats"></div>
+</section>
+
+<!-- ================= РЕНОВАЦИЯ ================= -->
+<section id="renewal" class="hidden">
+  <div class="grid g4" id="renewal-kpis"></div>
+  <div class="note info">
+    <b>Трек имеет значение.</b> «מיסוי» (налоговый) — обычный пинуй-бинуй через налогообложение;
+    «רשויות» — через полномочия государства, там сроки другие. Статус «במימוש» означает,
+    что комплекс уже реализуется, «תכנון ראשוני» — что это пока намерение, которое может не состояться.
+  </div>
+  <div class="card" style="overflow:auto"><table id="tbl-renewal"></table></div>
+  <h2>Что это значит для цены</h2>
+  <div class="card sub" id="renewal-meaning"></div>
+</section>
+
+<!-- ================= БУДУЩЕЕ ================= -->
+<section id="future" class="hidden">
+  <div class="grid g4" id="future-kpis"></div>
+  <h2>Планы застройки</h2>
+  <div class="card" style="overflow:auto"><table id="tbl-plans"></table></div>
+  <div class="note bad" id="future-note"></div>
+</section>
+
+<!-- ================= TELEGRAM ================= -->
+<section id="telegram" class="hidden">
+  <h2>Сообщение, которое уходит в Telegram</h2>
+  <div class="card"><pre id="tg-text">загрузка…</pre></div>
+
+  <h2>Расписание</h2>
+  <div class="card">
+    <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:12px">
+      <select id="sched">
+        <option value="daily">каждый день</option>
+        <option value="weekly">раз в неделю</option>
+        <option value="monthly">раз в месяц</option>
+        <option value="quarter" selected>раз в квартал</option>
+      </select>
+      <span class="sub">По умолчанию — раз в квартал: цены на жильё быстрее не меняются,
+        а реестр пополняется с задержкой, поэтому чаще смысла нет.</span>
+    </div>
+    <ol class="sub">
+      <li>Создайте бота у <span class="mono">@BotFather</span> → скопируйте токен.</li>
+      <li>Напишите боту что-нибудь и откройте
+          <span class="mono">https://api.telegram.org/bot&lt;ТОКЕН&gt;/getUpdates</span> — возьмите <span class="mono">chat.id</span>.</li>
+      <li>Задайте переменные и повесьте в cron. Скрипт сам решит, пора ли слать:
+          состояние хранится в <span class="mono">last_digest.json</span>, так что дёргать его можно хоть ежедневно.</li>
+    </ol>
+<pre>export WATCH_TELEGRAM_TOKEN="123456:ABC..."
+export WATCH_TELEGRAM_CHAT="987654321"
+cd projects/israel-watch
+
+# проверка без отправки
+python3 market.py --city "קרית גת"
+
+# реально отправить
+python3 market.py --city "קרית גת" --send --schedule quarter</pre>
+<pre># cron: каждое утро. Скрипт сам пропустит дни, когда срок ещё не наступил.
+0 8 * * * cd /путь/к/projects/israel-watch &amp;&amp; python3 market.py --city "קרית גת" --send --schedule quarter &gt;&gt; digest.log 2&gt;&amp;1</pre>
+  </div>
+
+  <h2>Отдельный сторож изменений в датасетах</h2>
+  <div class="card sub">
+    Кроме квартального дайджеста есть <span class="mono">watch.py</span> — он следит не за ценами,
+    а за самими государственными датасетами и срабатывает сразу, как только что-то поменялось:
+    новый комплекс реновации, смена статуса комплекса, новый план застройки, изменение числа квартир.
+<pre>python3 watch.py --init --city "קרית גת"   # первый прогон: записать базовый снимок
+python3 watch.py --city "קרית גת"          # дальше: код возврата 1 = что-то изменилось</pre>
+    Проверено намеренно испорченным снимком: девять подделанных изменений пойманы все.
+  </div>
+</section>
+
+<!-- ================= ОТКУДА ДАННЫЕ ================= -->
+<section id="about" class="hidden">
+  <h2>Источники</h2>
+  <div class="card">
+    <table>
+      <tr><th>Что</th><th>Источник</th><th>Как достаём</th><th>Объём</th></tr>
+      <tr><td>Сделки с недвижимостью</td><td class="he">רשות המסים, מערכת כרמ"ן</td>
+          <td class="mono">SQL over.org.il, без ключей</td><td id="src-deals">—</td></tr>
+      <tr><td>Улицы, индексы, координаты, статистические районы ЦСБ</td>
+          <td class="he">נדל״ן לעם — газовый реестр недвижимости, кадастр участков, список адресов почты</td>
+          <td class="mono">GET /api/nadlan/parcel/{гущ}/{хелька}<br>по одному запросу на участок, кэш на диске</td>
+          <td id="src-nadlan">1 097 775 участков · 728 548 адресов · 65 795 улиц по стране</td></tr>
+      <tr><td>Районы реновации: состав и статусы</td><td class="he">התחדשות עירונית — משרד הבינוי</td>
+          <td class="mono">CKAN datastore</td><td>970 комплексов по стране</td></tr>
+      <tr><td>Районы реновации: <b>границы</b></td>
+          <td class="he">שכבות GIS — מתחמי התחדשות עירונית מוכרזים (משרד הבינוי)</td>
+          <td class="mono">GET /api/tables/{слой}/features?bbox=…<br>GeoJSON в WGS84, шейпфайл от 31.07.2026 в Israel TM Grid</td>
+          <td id="src-gis">976 полигонов по стране</td></tr>
+      <tr><td>Планы застройки</td><td class="he">מלאי תכנוני — רשות מקרקעי ישראל</td>
+          <td class="mono">CKAN datastore</td><td>1 112 планов по стране</td></tr>
+    </table>
+  </div>
+
+  <h2>Как гуш/хелька превращается в улицу</h2>
+  <div class="card sub">
+    <p>Реестр сделок публикует по каждой сделке только гуш и хелька — номер кадастрового участка.
+    Отдельный открытый слой «נדל״ן לעם» скрещивает три источника: кадастровые участки
+    (гуш/хелька → координаты центра и статус), газовый реестр недвижимости
+    (гуш/хелька → <b>улица</b>) и список адресов почты (улица и дом → точка и индекс).</p>
+    <p>Поэтому точность здесь — <b>улица</b>, не номер дома: сам источник предупреждает, что
+    «газовый реестр связывает гуш-хелька с улицей, но не с номером дома».</p>
+    <p>Границы комплексов реновации берутся из отдельного GIS-шейпфайла минстроя.
+    Шейпфайл лежит в Israel TM Grid (метрическая проекция), но over.org.il держит тот же слой
+    в PostGIS уже в EPSG:4326 и отдаёт его как GeoJSON — поэтому конвертировать проекции
+    своими руками не пришлось, и пересекать полигоны можно напрямую с координатами участков.</p>
+    <p>Попадание участка в комплекс считается настоящим пересечением полигонов
+    (отсечение Сазерленда—Ходжмана, площадь в метрах), а не «центроид попал в контур»:
+    участок башни большой, и центроид легко оказывается за границей комплекса,
+    который режет его пополам. Порог «в комплексе» — 50% площади участка,
+    от 5% до 50% — «на границе».</p>
+  </div>
+
+  <h2>Почему не nadlan.gov.il напрямую</h2>
+  <div class="note">
+    Официальный сайт реестра сделок отдаёт страницу, но защищён <span class="mono">reCAPTCHA Enterprise</span>.
+    Обходить капчу я не стал. Вместо этого используется полная копия реестра, которую держит
+    over.org.il: те же 3,84 млн сделок с того же <span class="mono">nadlan.taxes.gov.il</span>,
+    но открытые через обычный SQL-интерфейс. Первоисточник тот же.
+  </div>
+
+  <h2>Оговорки, которые отдаёт сам источник</h2>
+  <div class="card"><ul class="sub" id="caveats"></ul></div>
+
+  <h2>Ограничения движка, на которые пришлось проектировать</h2>
+  <div class="grid g2">
+    <div class="card"><h3>Лимит частоты</h3><div class="sub">
+      20 запросов в минуту, дальше HTTP 429. Поэтому постраничная выгрузка всех строк города
+      (26 тысяч) не проходит, а агрегаты считаются на сервере: годовой разрез со всеми медианами —
+      один запрос на ~15 строк результата. Весь отчёт по городу — 9 запросов, 28 секунд.</div></div>
+    <div class="card"><h3>Все колонки — текст</h3><div class="sub">
+      <span class="mono">avg(deal_amount)</span> падает с «function avg(text) does not exist».
+      Любое агрегирование требует явного приведения: <span class="mono">deal_amount::numeric</span>.
+      Колонки <span class="mono">_id</span> нет, поэтому курсорная пагинация невозможна — только OFFSET.
+      Потолок ответа 1000 строк, дальше стоит <span class="mono">truncated=true</span> и строки молча обрезаются.</div></div>
+    <div class="card"><h3>percentile_cont отдаёт текст</h3><div class="sub">
+      Без <span class="mono">::int</span> медиана приходит в экспоненциальной записи — «9.5E+5».
+      Все медианы в коде приведены к int на стороне SQL.</div></div>
+    <div class="card"><h3>Даты текстом в DD/MM/YYYY</h3><div class="sub">
+      Год извлекается как <span class="mono">substr(deal_date,7,4)</span>, сортировка по дате —
+      склейкой <span class="mono">substr(...,7,4)||substr(...,4,2)||substr(...,1,2)</span>.
+      Сортировать такую дату как строку нельзя.</div></div>
+  </div>
+
+  <h2>Ошибки, которые я здесь сделал, и как они закрыты</h2>
+  <div class="grid g2">
+    <div class="card"><h3>Код города</h3><div class="sub">
+      Кирьят-Гат — код ЛАМАС <b>2630</b>. Я сначала взял 2600, а это <b>Эйлат</b>: в выборку молча
+      подмешались 39 чужих строк, и результат выглядел правдоподобно. Теперь коды не хранятся в коде —
+      они каждый раз берутся из справочника самого реестра, и при нескольких совпадениях выбирается
+      то, где сделок больше.</div></div>
+    <div class="card"><h3>Написание города</h3><div class="sub">
+      В реестре сделок город — «<span class="he">קריית גת</span>» (с йудом), в датасетах минстроя —
+      «<span class="he">קרית גת</span>» (без). Первая попытка дала ноль результатов сразу по трём
+      источникам, и это выглядело как «в городе ничего не происходит».</div></div>
+    <div class="card"><h3>«Новые» против «вторички»</h3><div class="sub">
+      Сначала я определял новую квартиру как «построена недавно». Оказалось, что у покупки на этапе
+      котлована в этом поле стоит <b>плановый год сдачи</b> — в данных есть 2029 и 2030. При таком
+      определении весь котлован попадал во вторичку. Доля котлована среди новых в Кирьят-Гате:
+      0–7% до 2021 года, 58–75% с 2022-го — то есть ошибка меняла картину полностью.</div></div>
+    <div class="card"><h3>Битые строки</h3><div class="sub">
+      При доле <span class="mono">0.000</span> или площади, записанной на целое здание, цена за м²
+      улетает в ₪464 000 и ₪995 000. Таких единицы на 24 тысячи сделок, но распределение по полосам
+      они ломают. Добавлен фильтр ₪/м² от 2 000 до 150 000.</div></div>
+  </div>
+</section>
+
+<div class="foot">
+  Данные: реестр сделок налогового управления Израиля и открытые датасеты министерства строительства.
+  Собрано <span id="built"></span>. Не является оценкой недвижимости или инвестиционной рекомендацией.
+</div>
+</div>
+
+<script>
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+const M=n=>n==null||n===""?"—":Math.round(n).toLocaleString("ru-RU").replace(/,/g," ");
+const esc=s=>String(s==null?"":s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const dlt=v=>v==null?"":`<span class="delta ${v>=0?"up":"down"}">${v>0?"+":""}${v}%</span>`;
+
+$$(".tab").forEach(b=>b.onclick=()=>{
+  $$(".tab").forEach(x=>x.classList.remove("on")); b.classList.add("on");
+  ["prices","addresses","renewal","future","telegram","about"].forEach(id=>$("#"+id).classList.toggle("hidden",id!==b.dataset.t));
+});
+$("#go").onclick=()=>{const v=$("#city").value.trim(); if(v) load(v);};
+$("#rebuild").onclick=()=>{const v=$("#city").value.trim()||window.__city; if(v) load(v,true);};
+$("#city").addEventListener("keydown",e=>{if(e.key==="Enter"){const v=e.target.value.trim(); if(v) load(v);}});
+
+function multiSeries(series,W,H,pad,fmt){
+  // series: [{name,color,pts:[{x,y}]}]
+  const all=[].concat(...series.map(s=>s.pts));
+  if(!all.length) return '<div class="sub">нет данных</div>';
+  const xs=all.map(p=>p.x), ys=all.map(p=>p.y).filter(y=>y!=null);
+  const xmin=Math.min(...xs), xmax=Math.max(...xs), xspan=(xmax-xmin)||1;
+  const ymin=Math.min(...ys), ymax=Math.max(...ys), yspan=(ymax-ymin)||1;
+  const X=x=>pad.l+(x-xmin)/xspan*(W-pad.l-pad.r);
+  const Y=y=>H-pad.b-(y-ymin)/yspan*(H-pad.t-pad.b);
+  let g="";
+  for(let i=0;i<=4;i++){const v=ymin+yspan*i/4,y=Y(v);
+    g+=`<line x1="${pad.l}" y1="${y}" x2="${W-pad.r}" y2="${y}" stroke="#2a3341"/>
+        <text x="${pad.l-9}" y="${y+4}" fill="#9aa7b4" font-size="11" text-anchor="end">${fmt(v)}</text>`;}
+  const step=Math.ceil(series[0].pts.length/14);
+  series[0].pts.forEach((p,i)=>{if(i%step===0||i===series[0].pts.length-1)
+    g+=`<text x="${X(p.x)}" y="${H-pad.b+17}" fill="#9aa7b4" font-size="11" text-anchor="middle">${p.lab||p.x}</text>`;});
+  const lines=series.map(s=>{
+    const pts=s.pts.filter(p=>p.y!=null);
+    if(pts.length<2) return "";
+    const d=pts.map((p,i)=>(i?"L":"M")+X(p.x)+" "+Y(p.y)).join(" ");
+    const dots=pts.map(p=>`<circle cx="${X(p.x)}" cy="${Y(p.y)}" r="3.4" fill="${s.color}" stroke="#0e1116" stroke-width="1.6"/>`).join("");
+    return `<path d="${d}" fill="none" stroke="${s.color}" stroke-width="2.4" stroke-linejoin="round"/>${dots}`;
+  }).join("");
+  return `<svg viewBox="0 0 ${W} ${H}" role="img">${g}${lines}</svg>`;
+}
+
+// ---------------------------------------------------------------------------
+//  Улицы и районы: адресный слой
+// ---------------------------------------------------------------------------
+const priceColor=v=>{
+  if(v==null) return "#4a5563";
+  const t=Math.max(0,Math.min(1,(v-8000)/(20000-8000)));
+  const c=[[74,163,255],[126,200,150],[240,200,90],[240,120,70],[230,70,90]];
+  const i=Math.min(c.length-2,Math.floor(t*(c.length-1))), f=t*(c.length-1)-i;
+  const m=k=>Math.round(c[i][k]+(c[i+1][k]-c[i][k])*f);
+  return `rgb(${m(0)},${m(1)},${m(2)})`;
+};
+
+function scatter(rows,W,H,pad){
+  const pts=rows.filter(r=>r["км_от_центра"]!=null&&r["м2_чистое"]);
+  if(pts.length<3) return '<div class="sub">недостаточно улиц с координатами</div>';
+  const xmin=0, xmax=Math.max(...pts.map(p=>p["км_от_центра"]))*1.08||1;
+  const ys=pts.map(p=>p["м2_чистое"]);
+  const ymin=Math.min(...ys)*0.9, ymax=Math.max(...ys)*1.06;
+  const X=x=>pad.l+(x-xmin)/(xmax-xmin)*(W-pad.l-pad.r);
+  const Y=y=>H-pad.b-(y-ymin)/(ymax-ymin)*(H-pad.t-pad.b);
+  const rOf=n=>4+Math.sqrt(n)*0.42;
+  let g="";
+  for(let i=0;i<=4;i++){
+    const v=ymin+(ymax-ymin)*i/4,y=Y(v);
+    g+=`<line x1="${pad.l}" y1="${y}" x2="${W-pad.r}" y2="${y}" stroke="#2a3341"/>`
+     + `<text x="${pad.l-9}" y="${y+4}" fill="#9aa7b4" font-size="11" text-anchor="end">${M(v)}</text>`;
+  }
+  for(let i=0;i<=5;i++){
+    const v=xmin+(xmax-xmin)*i/5,x=X(v);
+    g+=`<text x="${x}" y="${H-pad.b+18}" fill="#9aa7b4" font-size="11" text-anchor="middle">${v.toFixed(1)}</text>`;
+  }
+  g+=`<text x="${(pad.l+W-pad.r)/2}" y="${H-4}" fill="#9aa7b4" font-size="11.5" text-anchor="middle">км от центра города</text>`;
+  g+=`<text x="14" y="${(pad.t+H-pad.b)/2}" fill="#9aa7b4" font-size="11.5" text-anchor="middle" transform="rotate(-90 14 ${(pad.t+H-pad.b)/2})">₪ за м²</text>`;
+  pts.slice().sort((a,b)=>b["сделок_чистых"]-a["сделок_чистых"]).forEach(p=>{
+    const cx=X(p["км_от_центр"]!=null?p["км_от_центра"]:0),cy=Y(p["м2_чистое"]),r=rOf(p["сделок_чистых"]);
+    g+=`<circle cx="${cx.toFixed(1)}" cy="${cy.toFixed(1)}" r="${r.toFixed(1)}" fill="${priceColor(p["м2_чистое"])}" fill-opacity="0.5" stroke="${priceColor(p["м2_чистое"])}" stroke-width="1.1"><title>${p["улица"]}: ₪${M(p["м2_чистое"])}/м² · ${p["сделок_чистых"]} сделок · ${p["км_от_центра"]} км от центра</title></circle>`;
+  });
+  const big=pts.slice().sort((a,b)=>b["м2_чистое"]-a["м2_чистое"]).slice(0,6)
+    .concat(pts.slice().sort((a,b)=>a["м2_чистое"]-b["м2_чистое"]).slice(0,4));
+  big.forEach(p=>{
+    const cx=X(p["км_от_центра"]),cy=Y(p["м2_чистое"]);
+    g+=`<text x="${(cx+rOf(p["сделок_чистых"])+4).toFixed(1)}" y="${(cy+4).toFixed(1)}" fill="#c9d4df" font-size="11">${p["улица"]}</text>`;
+  });
+  return `<svg viewBox="0 0 ${W} ${H}" width="100%">${g}</svg>`;
+}
+
+function cityMap(ad,bnd,W,H){
+  const st=(ad["улицы"]||[]).filter(x=>x.lat&&x.lon&&(x["сделок_чистых"]||0)>=15);
+  const cx=(bnd||[]).filter(b=>b["центроид"]);
+  if(!st.length&&!cx.length) return '<div class="sub">нет координат</div>';
+  const lons=st.map(s=>s.lon).concat(cx.map(b=>b["центроид"].lon));
+  const lats=st.map(s=>s.lat).concat(cx.map(b=>b["центроид"].lat));
+  const x0=Math.min(...lons),x1=Math.max(...lons),y0=Math.min(...lats),y1=Math.max(...lats);
+  const mx=(x1-x0)*0.16||0.01,my=(y1-y0)*0.16||0.01;
+  const k=Math.min((W-150)/((x1-x0+2*mx)*96000),(H-70)/((y1-y0+2*my)*110880));
+  const PX=lon=>70+(lon-(x0-mx))*96000*k;
+  const PY=lat=>H-40-((lat-(y0-my))*110880*k);
+  const mPerPx=1/k;
+  let g="";
+  cx.forEach(b=>{
+    const x=PX(b["центроид"].lon),y=PY(b["центроид"].lat);
+    const ha=b["площадь_га"]||1, r=Math.max(9,Math.min(38,Math.sqrt(ha*10000/Math.PI)/mPerPx));
+    g+=`<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${r.toFixed(1)}" fill="rgba(248,81,73,.14)" stroke="#f85149" stroke-width="1.7" stroke-dasharray="5 3"><title>${b["комплекс"]}: ${ha} га · ${b["сейчас_единиц"]} → ${b["станет_единиц"]} квартир · ${b["сделок_внутри"]} сделок внутри границ</title></circle>`;
+    g+=`<text x="${x.toFixed(1)}" y="${(y-r-6).toFixed(1)}" fill="#ffb3ad" font-size="12" font-weight="600" text-anchor="middle">${b["комплекс"]}</text>`;
+  });
+  st.slice().sort((a,b)=>b["сделок_чистых"]-a["сделок_чистых"]).forEach(s=>{
+    const x=PX(s.lon),y=PY(s.lat),r=3.4+Math.sqrt(s["сделок_чистых"])*0.19;
+    g+=`<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${r.toFixed(1)}" fill="${priceColor(s["м2_чистое"])}" fill-opacity=".78" stroke="#0d1117" stroke-width=".7"><title>${s["улица"]}: ₪${M(s["м2_чистое"])}/м² · ${s["сделок_чистых"]} сделок · ${s["км_от_центра"]} км от центра${s["индекс"]&&s["индекс"].length?" · индекс "+s["индекс"].join(", "):""}</title></circle>`;
+  });
+  st.slice().sort((a,b)=>b["сделок_чистых"]-a["сделок_чистых"]).slice(0,9).forEach(s=>{
+    const x=PX(s.lon),y=PY(s.lat);
+    g+=`<text x="${(x+7).toFixed(1)}" y="${(y+4).toFixed(1)}" fill="#c9d4df" font-size="11">${s["улица"]}</text>`;
+  });
+  if(ad["центр_города"]){
+    const x=PX(ad["центр_города"].lon),y=PY(ad["центр_города"].lat);
+    g+=`<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="4" fill="none" stroke="#9aa7b4" stroke-width="1.6"/>`
+     + `<text x="${(x+9).toFixed(1)}" y="${(y+4).toFixed(1)}" fill="#9aa7b4" font-size="11">центр (от него считаем км)</text>`;
+  }
+  const barPx=1000/mPerPx;
+  if(barPx>25&&barPx<W-160){
+    g+=`<line x1="70" y1="${H-16}" x2="${(70+barPx).toFixed(1)}" y2="${H-16}" stroke="#9aa7b4" stroke-width="2"/>`
+     + `<line x1="70" y1="${H-21}" x2="70" y2="${H-11}" stroke="#9aa7b4" stroke-width="2"/>`
+     + `<line x1="${(70+barPx).toFixed(1)}" y1="${H-21}" x2="${(70+barPx).toFixed(1)}" y2="${H-11}" stroke="#9aa7b4" stroke-width="2"/>`
+     + `<text x="${(70+barPx/2).toFixed(1)}" y="${H-4}" fill="#9aa7b4" font-size="11" text-anchor="middle">1 км</text>`;
+  }
+  return `<svg viewBox="0 0 ${W} ${H}" width="100%">${g}</svg>`;
+}
+
+let __streetsAll=[],__streetsBnd=[];
+function drawStreets(){
+  const q=($("#addr-q").value||"").trim();
+  const mode=$("#addr-sort").value||"deals";
+  let rows=__streetsAll.filter(s=>!q||s["улица"].includes(q));
+  const key={deals:s=>-(s["сделок_чистых"]||0),m2desc:s=>-(s["м2_чистое"]||0),m2asc:s=>(s["м2_чистое"]||1e9),
+             newdesc:s=>-(s["м2_новые_чистое"]||0),kmdesc:s=>-(s["км_от_центра"]||0)}[mode];
+  rows=rows.slice().sort((a,b)=>key(a)-key(b));
+  const bOf={}; __streetsBnd.forEach(b=>(b["улицы"]||[]).forEach(u=>{(bOf[u["улица"]]=bOf[u["улица"]]||[]).push(b);}));
+  const head=`<tr><th>Улица</th><th class="num">Сделок</th><th class="num">из них новых</th>
+    <th class="num">₪/м² чистое</th><th class="num">₪/м² новые</th><th class="num">Медиана цены</th>
+    <th class="num">Площадь</th><th class="num">км до центра</th><th>Индекс</th>
+    <th class="num">Район ЦСБ</th><th>В комплексе реновации</th></tr>`;
+  const body=rows.map(s=>{
+    const bs=bOf[s["улица"]]||[];
+    const dirty=(s["сделок"]||0)-(s["сделок_чистых"]||0);
+    return `<tr><td class="he"><b>${esc(s["улица"])}</b>${s["участков_спорных"]?` <span class="sub" title="столько участков стоят на двух-трёх улицах сразу; в «чистую» цену они не входят">±${s["участков_спорных"]}</span>`:""}</td>
+      <td class="num">${M(s["сделок_чистых"])}${dirty?` <span class="sub">+${dirty}</span>`:""}</td>
+      <td class="num">${M(s["новых_сделок"])}</td>
+      <td class="num" style="color:${priceColor(s["м2_чистое"])}"><b>${M(s["м2_чистое"])}</b></td>
+      <td class="num">${M(s["м2_новые_чистое"])}</td>
+      <td class="num">${M(s["медиана_цены_чистая"])}</td>
+      <td class="num">${M(s["медиана_площади"])} м²</td>
+      <td class="num">${s["км_от_центра"]??"—"}</td>
+      <td class="mono">${(s["индекс"]||[]).join(", ")||"—"}</td>
+      <td class="num">${s["статрайон"]??"—"}</td>
+      <td class="he">${bs.length?bs.map(b=>`<span class="badge b-bad he">${esc(b["комплекс"])}</span>`).join(" "):'<span class="sub">—</span>'}</td></tr>`;
+  }).join("");
+  $("#tbl-streets").innerHTML=head+body;
+  $("#addr-streets-note").textContent=`Показано ${rows.length} улиц, у которых минимум 15 «чистых» сделок. `
+   +`Ещё ${(window.__ad&&window.__ad["улицы_мелкие"]||[]).length} улиц с меньшим числом сделок в JSON не выводятся — `
+   +`на таком объёме медиана улицы уже ни о чём не говорит.`;
+}
+
+function renderAddresses(d){
+  const ad=d["адреса"]||{}, bnd=(d["реновация_границы"]||{}).комплексы||[];
+  window.__ad=ad;
+  if(!ad["покрытие"]){
+    $("#addr-kpis").innerHTML="";
+    $("#addr-note").innerHTML="<b>Адресный слой не собрался.</b> Запустите <span class='mono'>python3 geo.py --city \"…\"</span> — он копит кэш улиц по участкам.";
+    return;
+  }
+  const cov=ad["покрытие"];
+  $("#addr-kpis").innerHTML=[
+    ["Сделок привязано к улице", cov["доля_сделок_pct"]+"%", `${M(cov["сделок_с_улицей"])} из ${M(cov["сделок_всего"])}`],
+    ["Участков с улицей", `${cov["участков_с_улицей"]} / ${cov["участков_всего"]}`, "гуш/хелька → улица"],
+    ["Улиц в отчёте", (ad["улицы"]||[]).length, "с ≥15 чистых сделок"],
+    ["Районов ЦСБ", (ad["статрайоны"]||[]).length, "с населением и кластером"],
+  ].map(([t,v,s])=>`<div class="card"><h3>${esc(t)}</h3><div class="kpi" style="font-size:23px">${esc(String(v))}</div><div class="sub">${esc(s)}</div></div>`).join("");
+
+  const st=ad["улицы"]||[];
+  const priced=st.filter(x=>x["м2_чистое"]&&x["сделок_чистых"]>=40);
+  const hi=priced.slice().sort((a,b)=>b["м2_чистое"]-a["м2_чистое"])[0];
+  const lo=priced.slice().sort((a,b)=>a["м2_чистое"]-b["м2_чистое"])[0];
+  $("#addr-note").innerHTML=`<b>Что это даёт.</b> Реестр сделок публикует только гуш и хелька — номер участка, не адрес. `
+   +`Улицы, индексы, координаты и статистические районы добавлены из открытого слоя «נדל״ן לעם» `
+   +`(газовый реестр недвижимости + кадастр участков), который связывает гуш-хелька с улицей. `
+   +(hi&&lo?`Разброс по городу: <b class="he">${esc(hi["улица"])}</b> ₪${M(hi["м2_чистое"])}/м² против `
+     +`<b class="he">${esc(lo["улица"])}</b> ₪${M(lo["м2_чистое"])}/м² — `
+     +`в ${hi&&lo?(hi["м2_чистое"]/lo["м2_чистое"]).toFixed(1):"—"} раза в пределах одного города.`:"");
+
+  $("#addr-map").innerHTML=cityMap(ad,bnd,940,540);
+  $("#chart-scatter").innerHTML=scatter(st,940,420,{l:64,r:130,t:16,b:40});
+  $("#addr-map-legend").innerHTML=`
+    <span><i style="background:#5aa3ff"></i>улица дешевле ₪10 000/м²</span>
+    <span><i style="background:#7ec896"></i>₪10–14 000</span>
+    <span><i style="background:#f0c85a"></i>₪14–17 000</span>
+    <span><i style="background:#f07846"></i>₪17–19 000</span>
+    <span><i style="background:#e6465a"></i>дороже ₪19 000</span>
+    <span><i style="background:rgba(248,81,73,.2);border:1.5px dashed #f85149"></i>граница комплекса реновации</span>`;
+
+  __streetsAll=st; __streetsBnd=bnd;
+  drawStreets();
+  $("#addr-q").oninput=drawStreets;
+  $("#addr-sort").onchange=drawStreets;
+
+  $("#tbl-stat-areas").innerHTML=`<tr><th class="num">Район ЦСБ</th><th class="num">Сделок</th>
+    <th class="num">из них новых</th><th class="num">₪/м² все</th><th class="num">₪/м² новые</th>
+    <th class="num">Население</th><th>Основная функция</th><th class="num">Соц-экон. кластер</th><th>Улицы</th></tr>`
+   +(ad["статрайоны"]||[]).filter(a=>(a["сделок"]||0)>=25).map(a=>`<tr>
+      <td class="num"><b>${esc(String(a["статрайон"]))}</b></td>
+      <td class="num">${M(a["сделок"])}</td><td class="num">${M(a["новых_сделок"])}</td>
+      <td class="num" style="color:${priceColor(a["м2_все"])}"><b>${M(a["м2_все"])}</b></td>
+      <td class="num">${M(a["м2_новые"])}</td><td class="num">${M(a["население"])}</td>
+      <td class="he">${esc(a["функция"]||"—")}</td>
+      <td class="num">${a["кластер_соцэк"]??"—"}</td>
+      <td class="he sub">${(a["улиц"]||[]).slice(0,9).map(esc).join(", ")}${(a["улиц"]||[]).length>9?" …":""}</td></tr>`).join("");
+
+  $("#addr-areas-note").innerHTML=`<b>Как читать.</b> Статистический район — это официальное деление ЦСБ `
+   +`(division 2022), в Кирьят-Гате таких районов около двух десятков, население каждого — тысячи человек. `
+   +`Соц-экономический кластер публикуется только для деления 2011 года, поэтому он может относиться `
+   +`к чуть другим границам, чем население 2024 года.`;
+
+  $("#addr-caveats").innerHTML=`<ul>`+(ad["оговорки"]||[]).map(x=>`<li>${esc(x)}</li>`).join("")+`</ul>`;
+}
+
+function render(d){
+  const h=d["заголовок"], c=d["город"], rn=d["реновация"], pl=d["планы"];
+  const years=d["по_годам"], qs=d["поквартально"], partial=d["неполный_год"];
+
+  $("#title").textContent=`${c["в_реестре"]} — квартиры по реальным сделкам`;
+  $("#built").textContent=d["создано"].slice(0,16).replace("T"," ");
+  const src=d["источники"]["сделки"];
+  $("#meta").innerHTML=`реестр сделок налогового управления · ${M(c["всего_сделок"])} сделок по городу ·
+    выгрузка снята ${esc(src["выгрузка_снята"])} · последняя сделка города ${esc(src["последняя_сделка_города"]||"—")}`;
+  $("#src-deals").textContent=`${M(src["всего_сделок_в_реестре"])} сделок, ${src["реестр_покрывает"][0]} — ${src["реестр_покрывает"][1]}`;
+
+  $("#kpis").innerHTML=[
+    ["Новые готовые, "+h["опорный_год"], `₪${M(h["м2_готовые_новые"])}<small>/м²</small>`,
+      `медиана сделки ₪${M(h["цена_готовые_новые"])} · ${M(h["готовых_новых_сделок"])} сделок`],
+    ["Изменение за год", dlt(h["за_год_pct"])||"—",
+      `за 5 лет ${dlt(h["за_5_лет_pct"])||"—"} · ₪/м² готовых новых`],
+    ["Котлован, "+h["опорный_год"], `₪${M(h["м2_котлован"])}<small>/м²</small>`,
+      `медиана ₪${M(h["цена_котлован"])} · ${M(h["котлован_сделок"])} сделок`],
+    ["Вторичка, "+h["опорный_год"], `₪${M(h["м2_вторичка"])}<small>/м²</small>`,
+      `премия новых к вторичке ${dlt(h["м2_готовые_новые"]&&h["м2_вторичка"]?Math.round((h["м2_готовые_новые"]/h["м2_вторичка"]-1)*1000)/10:null)}`],
+  ].map(([t,v,s])=>`<div class="card"><h3>${t}</h3><div class="kpi">${v}</div><div class="sub">${s}</div></div>`).join("");
+
+  const cur=h["текущий_год_неполный"];
+  $("#partial-note").innerHTML = cur ? `<div class="note bad">
+    <b>${cur["год"]} год в реестре неполный</b> — сделки заявляют с задержкой, выгрузка снята ${esc(src["выгрузка_снята"])}.
+    Цифры по нему: готовые новые ₪${M(cur["м2_готовые_новые"])}/м² (${M(cur["готовых_новых_сделок"])} сделок),
+    котлован ₪${M(cur["м2_котлован"])}/м² (${M(cur["котлован_сделок"])} сделок),
+    вторичка ₪${M(cur["м2_вторичка"])}/м².
+    К опорному ${h["опорный_год"]}: ${dlt(cur["изменение_к_опорному_pct"])}.
+    Все выводы ниже опираются на ${h["опорный_год"]} как последний полный год.</div>` : "";
+
+  $("#chart-years").innerHTML=multiSeries([
+    {name:"новые готовые",color:"#3fb950",pts:years.map(r=>({x:+r["год"],y:r["м2_готовые"],lab:r["год"]}))},
+    {name:"котлован",color:"#d29922",pts:years.map(r=>({x:+r["год"],y:r["м2_котлован"],lab:r["год"]}))},
+    {name:"вторичка",color:"#8b949e",pts:years.map(r=>({x:+r["год"],y:r["м2_вторичка"],lab:r["год"]}))},
+  ],940,320,{l:70,r:20,t:20,b:34},v=>"₪"+M(v));
+
+  $("#chart-quarters").innerHTML=multiSeries([
+    {name:"новые",color:"#4aa3ff",pts:qs.map(r=>({x:r["период"],y:r["м2_новые"],lab:r["период"].slice(2)}))},
+    {name:"вторичка",color:"#8b949e",pts:qs.map(r=>({x:r["период"],y:r["м2_вторичка"],lab:r["период"].slice(2)}))},
+  ].map(s=>({...s,pts:s.pts.map((p,i)=>({...p,x:i}))})),940,260,{l:70,r:20,t:18,b:34},v=>"₪"+M(v))
+   + `<div class="legend"><span><i style="background:var(--accent)"></i>все новые</span>
+      <span><i style="background:var(--old)"></i>вторичка</span></div>
+      <div class="sub" style="margin-top:6px">Подписи — кварталы. ${qs.length?esc(qs[0]["период"])+" — "+esc(qs[qs.length-1]["период"]):""}</div>`;
+
+  // полосы цен
+  const bn=d["полосы_цен_текущий"], bo=d["полосы_цен_опорный"];
+  const band=(blk,color)=>{
+    const rows=blk["полосы"]||[]; const tot=rows.reduce((a,r)=>a+r["сделок"],0)||1;
+    const mx=Math.max(...rows.map(r=>r["сделок"]),1);
+    return `<div class="card"><h3>${blk["год"]||"—"} · ${rows.length?tot:0} сделок</h3>`+
+      rows.map(r=>`<div class="band"><span class="mono">₪${M(r["полоса"])}</span>
+        <span><span class="bar" style="width:${(r["сделок"]/mx*100).toFixed(1)}%;background:${color}"></span></span>
+        <span class="num">${Math.round(r["сделок"]/tot*100)}%</span></div>`).join("")+`</div>`;
+  };
+  $("#bands").innerHTML=band(bo,"#3fb950")+band(bn,"#4aa3ff");
+  const sum=(blk,lo,hi)=>{const rows=(blk["полосы"]||[]).filter(r=>r["полоса"]>=lo&&r["полоса"]<=hi);
+    const t=(blk["полосы"]||[]).reduce((a,r)=>a+r["сделок"],0)||1;
+    return Math.round(rows.reduce((a,r)=>a+r["сделок"],0)/t*100);};
+  if(bn["полосы"]&&bo["полосы"]){
+    $("#bands-note").innerHTML=`<b>Что видно.</b> В ${bo["год"]} году ${sum(bo,17000,22999)}% новых сделок
+      приходилось на ₪17 000–23 000/м². В ${bn["год"]} году ${sum(bn,12000,14999)}% сделок ушло в полосу
+      ₪12 000–15 000/м², а в прежней дорогой полосе осталось ${sum(bn,17000,22999)}%.
+      Это не «цены упали на четверть» — это смещение структуры сделок в более дешёвый сегмент
+      при том, что верхняя часть рынка почти не сдвинулась.`;
+  }
+
+  const rooms=(d["по_комнатам"]||[]).filter(r=>(r["новых"]||0)>=10);
+  $("#tbl-rooms").innerHTML=`<tr><th>Комнат</th><th class="num">Новых сделок</th><th class="num">Медиана цены</th>
+    <th class="num">₪/м²</th><th class="num">Медиана площади</th><th class="num">Вторичка: сделок</th><th class="num">Вторичка: цена</th></tr>`
+    +rooms.map(r=>`<tr><td><b>${r["комнат"]}</b></td><td class="num">${M(r["новых"])}</td>
+      <td class="num"><b>₪${M(r["цена_новые"])}</b></td><td class="num">₪${M(r["м2_новые"])}</td>
+      <td class="num">${M(r["площадь_новые"])} м²</td><td class="num">${M(r["вторичка"])}</td>
+      <td class="num">₪${M(r["цена_вторичка"])}</td></tr>`).join("");
+
+  const areas=(d["участки"]||[]).slice(0,25);
+  $("#tbl-areas").innerHTML=`<tr><th>Гуш/хелька</th><th class="num">Сделок</th><th class="num">Новых</th>
+    <th class="num">₪/м² медиана</th><th class="num">₪/м² новые</th><th class="num">Медиана цены</th>
+    <th class="num">Медиана года постройки</th><th>Последняя сделка</th></tr>`
+    +areas.map(a=>`<tr><td class="mono">${esc(a["участок"])}</td><td class="num">${M(a["сделок"])}</td>
+      <td class="num">${M(a["новых"])}</td><td class="num"><b>₪${M(a["м2_медиана"])}</b></td>
+      <td class="num">₪${M(a["м2_новые"])}</td><td class="num">₪${M(a["медиана_цены"])}</td>
+      <td class="num">${a["медиана_года_постройки"]||"—"}</td><td>${esc(a["последняя_сделка"]||"—")}</td></tr>`).join("");
+
+  $("#tbl-recent").innerHTML=`<tr><th>Дата</th><th>Сегмент</th><th>Тип</th><th class="num">Цена</th>
+    <th class="num">₪/м²</th><th class="num">Площадь</th><th class="num">Комнат</th>
+    <th class="num">Год постройки</th><th>Участок</th></tr>`
+    +(d["последние_сделки"]||[]).map(r=>{
+      const seg={"новая_свежая":'<span class="badge b-good">новая</span>',
+                 "новая_котлован":'<span class="badge b-warn">котлован</span>',
+                 "вторичка":'<span class="badge b-dim">вторичка</span>'}[r["сегмент"]]||esc(r["сегмент"]);
+      return `<tr><td class="mono">${esc(r["дата"])}</td><td>${seg}</td><td class="he">${esc(r["тип"])}</td>
+        <td class="num"><b>₪${M(r["цена"])}</b></td><td class="num">₪${M(r["цена_за_м2"])}</td>
+        <td class="num">${M(r["площадь"])} м²</td><td class="num">${esc(r["комнат"])}</td>
+        <td class="num">${esc(r["год_постройки"])}</td><td class="mono">${esc(r["участок"])}</td></tr>`;}).join("");
+
+  // реновация
+  $("#renewal-kpis").innerHTML=[
+    ["Комплексов реновации", rn["всего_комплексов"], "пинуй-бинуй и ТАМА 38"],
+    ["Квартир сейчас", M(rn["сейчас_единиц"]), "на этих площадках"],
+    ["Станет", M(rn["станет_единиц"]), `+${M(rn["добавят_единиц"])} новых единиц`],
+    ["Уже реализуется", rn["в_работе"], "статус «в процессе» или «утверждён и реализуется»"],
+  ].map(([t,v,s])=>`<div class="card"><h3>${t}</h3><div class="kpi">${v}</div><div class="sub">${s}</div></div>`).join("");
+
+  const stBadge=s=>s.includes("במימוש")?"b-good":s.includes("אחרי רישוי")?"b-good":
+                   s.includes("מאושרת")?"b-warn":s.includes("תכנון")?"b-dim":"b-dim";
+  const bnd=((d["реновация_границы"]||{}).комплексы||[]);
+  const bByName={}; bnd.forEach(b=>{bByName[b["комплекс"]]=b;});
+  $("#tbl-renewal").innerHTML=`<tr><th>Комплекс</th><th>Где именно — улицы внутри границ</th><th>Статус</th><th>Трек</th><th>В работе</th>
+    <th class="num">Сейчас</th><th class="num">Добавят</th><th class="num">Станет</th>
+    <th class="num">Площадь</th><th>Объявлен</th><th>Номер плана</th><th>Ссылки</th></tr>`
+    +rn["комплексы"].map(x=>{const b=bByName[x["комплекс"]];return `<tr><td class="he"><b>${esc(x["комплекс"])}</b></td>
+      <td class="he">${b&&b["улицы"]&&b["улицы"].length
+        ? b["улицы"].map(u=>`${esc(u["улица"])} <span class="sub">${u["сделок"]}</span>`).join(", ")
+          +`<div class="sub">${b["участков_внутри"]} участков`
+          +(b["участков_частично"]?` и ещё ${b["участков_частично"]} на границе`:"")
+          +`, ${b["сделок_внутри"]} сделок с 2012 года, ₪${M(b["м2_внутри_взвеш"])}/м²</div>`
+        : `<span class="sub">границы есть, сделок внутри не нашлось</span>`}</td>
+      <td><span class="badge ${stBadge(x["статус"])} he">${esc(x["статус"]||"—")}</span></td>
+      <td class="he">${esc(x["трек"]||"—")}</td><td>${x["в_работе"]==="כן"?"да":"нет"}</td>
+      <td class="num">${M(x["сейчас_единиц"])}</td><td class="num">+${M(x["добавят"])}</td>
+      <td class="num"><b>${M(x["станет"])}</b></td>
+      <td class="num">${b?b["площадь_га"]+" га":"—"}</td><td>${esc(x["объявлен"]||"—")}</td>
+      <td class="mono">${esc(x["номер_плана"]||"—")}</td>
+      <td>${x["план_mavat"]?`<a href="${esc(x["план_mavat"])}" target="_blank">план</a> `:""}${x["карта_govmap"]?`<a href="${esc(x["карта_govmap"])}" target="_blank">карта</a>`:""}</td></tr>`;}).join("");
+
+  const big=rn["комплексы"].slice(0,3);
+  $("#renewal-meaning").innerHTML=`
+    <p>Восемь комплексов превращают <b>${M(rn["сейчас_единиц"])}</b> существующих квартир в <b>${M(rn["станет_единиц"])}</b> —
+    то есть добавляют городу <b>${M(rn["добавят_единиц"])}</b> единиц жилья в старых кварталах.
+    Плюс ещё <b>${M(pl["всего_единиц"])}</b> единиц в новых планах застройки. Это огромный навес предложения.</p>
+    <p>Крупнейшие: ${big.map(x=>`«${esc(x["комплекс"])}» ${M(x["сейчас_единиц"])} → ${M(x["станет"])}`).join(", ")}.</p>
+    <p><b>Что это значит практически.</b> Статус решает всё: «תכנון ראשוני» — намерение, которое может
+    не состояться и через десять лет; «תכנית מאושרת לפני מימוש» — план утверждён, но не запущен;
+    «במימוש» — реально идёт. Сейчас в работе ${rn["в_работе"]} из ${rn["всего_комплексов"]}.</p>
+    <p>Для владельца квартиры в таком комплексе реновация — это рост стоимости прав, но годы стройки
+    и переселения. Для покупателя рядом — это будущие сотни новых квартир в продаже, то есть давление на цену.
+    Ссылки «план» и «карта» в таблице ведут на mavat и GovMap, где видны точные границы комплекса.</p>`;
+
+  // будущее
+  $("#future-kpis").innerHTML=[
+    ["Единиц в планах", M(pl["всего_единиц"]), `${pl["планы"].length} планов`],
+    ["Уже в стадии «действует»", M(pl["по_этапам"]["תוקף"]||0), "могут выходить на рынок"],
+    ["Добавит реновация", M(rn["добавят_единиц"]), `${rn["всего_комплексов"]} комплексов`],
+    ["Итого потенциально", M(pl["всего_единиц"]+rn["добавят_единиц"]), "новых единиц жилья"],
+  ].map(([t,v,s])=>`<div class="card"><h3>${t}</h3><div class="kpi" style="font-size:22px">${v}</div><div class="sub">${s}</div></div>`).join("");
+
+  const stageB=t=>t==="תוקף"?"b-good":t==="תנאי סף"?"b-warn":"b-dim";
+  $("#tbl-plans").innerHTML=`<tr><th>Номер плана</th><th>Название</th><th>Этап</th><th>Девелопер</th>
+    <th class="num">Единиц</th><th>Порог пройден</th><th>Утверждён</th><th>Ссылки</th></tr>`
+    +pl["планы"].map(p=>`<tr><td class="mono">${esc(p["номер"])}</td><td class="he">${esc(p["название"])}</td>
+      <td><span class="badge ${stageB(p["этап"])} he">${esc(p["этап"])}</span></td>
+      <td class="he">${esc(p["девелопер"])}</td><td class="num"><b>${M(p["единиц"])}</b></td>
+      <td>${esc(p["порог"]||"—")}</td><td>${esc(p["утверждён"]||"—")}</td>
+      <td>${p["рмаи"]?`<a href="${esc(p["рмаи"])}" target="_blank">РМАИ</a> `:""}${p["мават"]?`<a href="${esc(p["мават"])}" target="_blank">mavat</a>`:""}</td></tr>`).join("");
+
+  $("#future-note").innerHTML=`<b>Масштаб.</b> ${M(pl["всего_единиц"]+rn["добавят_единиц"])} потенциальных новых единиц —
+    это очень много для города такого размера. Крупнейший план
+    «${esc((pl["планы"][0]||{}).название||"")}» — ${M((pl["планы"][0]||{}).единиц)} единиц в стадии «${esc((pl["планы"][0]||{}).этап||"")}».
+    Большое будущее предложение обычно давит на цены в старом жилом фонде и поддерживает новые районы.`;
+
+  renderAddresses(d);
+  const cov=(d["адреса"]||{}).покрытие;
+  if(cov) $("#cov-inline").textContent=cov["доля_сделок_pct"]+"% ("+M(cov["сделок_с_улицей"])+
+    " из "+M(cov["сделок_всего"])+", "+cov["участков_с_улицей"]+" из "+cov["участков_всего"]+" участков)";
+
+  $("#tg-text").textContent=d["telegram_text"]||"(нет)";
+  $("#caveats").innerHTML=(d["оговорки"]||[]).map(x=>`<li>${esc(x)}</li>`).join("");
+  $("#sched").value=d["расписание"]||"quarter";
+}
+
+async function load(city,refresh){
+  window.__city=city;
+  $("#busy").textContent=refresh?"пересобираю с нуля, ~30 секунд…":"собираю данные, ~30 секунд…";
+  $("#rebuild").disabled=true;
+  try{
+    const r=await fetch("/api/market?city="+encodeURIComponent(city)+(refresh?"&refresh=1":""));
+    const j=await r.json();
+    if(j.error){$("#busy").textContent="ошибка: "+j.error;return;}
+    render(j); $("#busy").textContent=""; window.__d=j;
+  }catch(e){$("#busy").textContent="сбой: "+e;}
+  finally{$("#rebuild").disabled=false;}
+}
+load("__CITY__");
+</script>
+</body>
+</html>
